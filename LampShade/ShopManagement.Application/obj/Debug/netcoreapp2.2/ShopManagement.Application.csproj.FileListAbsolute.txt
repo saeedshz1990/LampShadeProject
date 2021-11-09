@@ -1,0 +1,16 @@
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Application\bin\Debug\netcoreapp2.2\ShopManagement.Application.deps.json
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Application\bin\Debug\netcoreapp2.2\ShopManagement.Application.dll
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Application\bin\Debug\netcoreapp2.2\ShopManagement.Application.pdb
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Application\bin\Debug\netcoreapp2.2\0_FrameWork.dll
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Application\bin\Debug\netcoreapp2.2\ShopManagement.Application.Contracts.dll
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Application\bin\Debug\netcoreapp2.2\ShopManagement.Domain.dll
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Application\bin\Debug\netcoreapp2.2\ShopManagement.Application.Contracts.pdb
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Application\bin\Debug\netcoreapp2.2\ShopManagement.Domain.pdb
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Application\bin\Debug\netcoreapp2.2\0_FrameWork.pdb
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Application\obj\Debug\netcoreapp2.2\ShopManagement.Application.csprojAssemblyReference.cache
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Application\obj\Debug\netcoreapp2.2\ShopManagement.Application.csproj.CoreCompileInputs.cache
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Application\obj\Debug\netcoreapp2.2\ShopManagement.Application.AssemblyInfoInputs.cache
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Application\obj\Debug\netcoreapp2.2\ShopManagement.Application.AssemblyInfo.cs
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Application\obj\Debug\netcoreapp2.2\ShopManagement.Application.csproj.CopyComplete
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Application\obj\Debug\netcoreapp2.2\ShopManagement.Application.dll
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Application\obj\Debug\netcoreapp2.2\ShopManagement.Application.pdb
