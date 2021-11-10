@@ -1,3 +1,7 @@
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Configuration\obj\Debug\netcoreapp2.2\ShopManagement.Configuration.csproj.CoreCompileInputs.cache
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Configuration\obj\Debug\netcoreapp2.2\ShopManagement.Configuration.AssemblyInfoInputs.cache
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Configuration\obj\Debug\netcoreapp2.2\ShopManagement.Configuration.AssemblyInfo.cs
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Configuration\obj\Debug\netcoreapp2.2\ShopManagement.Configuration.csprojAssemblyReference.cache
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp2.2\ShopManagement.Configuration.deps.json
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp2.2\ShopManagement.Configuration.dll
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp2.2\ShopManagement.Configuration.pdb
@@ -11,10 +15,6 @@ C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Config
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp2.2\0_FrameWork.pdb
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp2.2\ShopManagement.Application.Contracts.pdb
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp2.2\ShopManagement.Domain.pdb
-C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Configuration\obj\Debug\netcoreapp2.2\ShopManagement.Configuration.csprojAssemblyReference.cache
-C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Configuration\obj\Debug\netcoreapp2.2\ShopManagement.Configuration.csproj.CoreCompileInputs.cache
-C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Configuration\obj\Debug\netcoreapp2.2\ShopManagement.Configuration.AssemblyInfoInputs.cache
-C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Configuration\obj\Debug\netcoreapp2.2\ShopManagement.Configuration.AssemblyInfo.cs
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Configuration\obj\Debug\netcoreapp2.2\ShopManagement.Configuration.csproj.CopyComplete
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Configuration\obj\Debug\netcoreapp2.2\ShopManagement.Configuration.dll
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Configuration\obj\Debug\netcoreapp2.2\ShopManagement.Configuration.pdb

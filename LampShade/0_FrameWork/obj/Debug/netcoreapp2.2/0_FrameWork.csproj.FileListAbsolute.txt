@@ -1,9 +1,9 @@
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\0_FrameWork\bin\Debug\netcoreapp2.2\0_FrameWork.deps.json
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\0_FrameWork\bin\Debug\netcoreapp2.2\0_FrameWork.dll
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\0_FrameWork\bin\Debug\netcoreapp2.2\0_FrameWork.pdb
-C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\0_FrameWork\obj\Debug\netcoreapp2.2\0_FrameWork.csprojAssemblyReference.cache
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\0_FrameWork\obj\Debug\netcoreapp2.2\0_FrameWork.csproj.CoreCompileInputs.cache
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\0_FrameWork\obj\Debug\netcoreapp2.2\0_FrameWork.AssemblyInfoInputs.cache
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\0_FrameWork\obj\Debug\netcoreapp2.2\0_FrameWork.AssemblyInfo.cs
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\0_FrameWork\obj\Debug\netcoreapp2.2\0_FrameWork.dll
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\0_FrameWork\obj\Debug\netcoreapp2.2\0_FrameWork.pdb
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\0_FrameWork\obj\Debug\netcoreapp2.2\0_FrameWork.csprojAssemblyReference.cache

@@ -8,8 +8,7 @@
     ".NETCoreApp,Version=v2.2": {
       "ShopManagement.Application.Contracts/1.0.0": {
         "dependencies": {
-          "0_FrameWork": "1.0.0",
-          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0.0"
+          "0_FrameWork": "1.0.0"
         },
         "runtime": {
           "ShopManagement.Application.Contracts.dll": {}
@@ -367,14 +366,6 @@
         "runtime": {
           "0_FrameWork.dll": {}
         }
-      },
-      "Microsoft.AspNetCore.Mvc.ViewFeatures/2.2.0.0": {
-        "runtime": {
-          "Microsoft.AspNetCore.Mvc.ViewFeatures.dll": {
-            "assemblyVersion": "2.2.0.0",
-            "fileVersion": "2.2.0.0"
-          }
-        }
       }
     }
   },
@@ -687,11 +678,6 @@
     },
     "0_FrameWork/1.0.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.AspNetCore.Mvc.ViewFeatures/2.2.0.0": {
-      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

@@ -1,3 +1,9 @@
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\ServiceHost.csproj.CoreCompileInputs.cache
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\ServiceHost.RazorAssemblyInfo.cache
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\ServiceHost.RazorAssemblyInfo.cs
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\ServiceHost.AssemblyInfoInputs.cache
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\ServiceHost.AssemblyInfo.cs
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\ServiceHost.csprojAssemblyReference.cache
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\bin\Debug\netcoreapp2.2\ServiceHost.deps.json
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\bin\Debug\netcoreapp2.2\ServiceHost.runtimeconfig.json
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\bin\Debug\netcoreapp2.2\ServiceHost.runtimeconfig.dev.json
@@ -17,12 +23,6 @@ C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\bin\Debug
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\bin\Debug\netcoreapp2.2\ShopManagement.Infrastructure.EFCore.pdb
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\bin\Debug\netcoreapp2.2\0_FrameWork.pdb
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\bin\Debug\netcoreapp2.2\ShopManagement.Domain.pdb
-C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\ServiceHost.csprojAssemblyReference.cache
-C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\ServiceHost.csproj.CoreCompileInputs.cache
-C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\ServiceHost.RazorAssemblyInfo.cache
-C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\ServiceHost.RazorAssemblyInfo.cs
-C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\ServiceHost.AssemblyInfoInputs.cache
-C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\ServiceHost.AssemblyInfo.cs
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\ServiceHost.TagHelpers.input.cache
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\ServiceHost.TagHelpers.output.cache
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\ServiceHost.RazorCoreGenerate.cache
@@ -33,6 +33,9 @@ C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\Razor\Areas\Administration\Pages\Shop\ProductCategory\Create.g.cshtml.cs
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\Razor\Areas\Administration\Pages\Shop\ProductCategory\Edit.g.cshtml.cs
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\Razor\Areas\Administration\Pages\Shop\ProductCategory\Index.g.cshtml.cs
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\Razor\Areas\Administration\Pages\Shop\ProductPictures\Create.g.cshtml.cs
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\Razor\Areas\Administration\Pages\Shop\ProductPictures\Edit.g.cshtml.cs
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\Razor\Areas\Administration\Pages\Shop\ProductPictures\Index.g.cshtml.cs
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\Razor\Areas\Administration\Pages\Shop\Products\Create.g.cshtml.cs
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\Razor\Areas\Administration\Pages\Shop\Products\Edit.g.cshtml.cs
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\Razor\Areas\Administration\Pages\Shop\Products\Index.g.cshtml.cs
@@ -52,3 +55,7 @@ C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\ServiceHost.csproj.CopyComplete
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\ServiceHost.dll
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\ServiceHost.pdb
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\Razor\Areas\Administration\Pages\Shared\_Menu.g.cshtml.cs
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\Razor\Areas\Administration\Pages\Shop\Slides\Create.g.cshtml.cs
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\Razor\Areas\Administration\Pages\Shop\Slides\Edit.g.cshtml.cs
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ServiceHost\obj\Debug\netcoreapp2.2\Razor\Areas\Administration\Pages\Shop\Slides\Index.g.cshtml.cs

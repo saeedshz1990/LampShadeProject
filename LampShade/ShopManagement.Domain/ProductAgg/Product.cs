@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using ShopManagement.Domain.ProductCategoryAgg;
 using _0_FrameWork.Domain;
+using ShopManagement.Domain.ProductPictureAgg;
+using System.Collections.Generic;
 
 namespace ShopManagement.Domain.ProductAgg
 {
@@ -22,6 +24,8 @@ namespace ShopManagement.Domain.ProductAgg
         public string Slug { get; private set; } 
         public long CategoryId { get; private set; }
         public ProductCategory Category { get; private set; }
+        public List<ProductPicture> ProductPictures { get; private set; }
+
 
         public Product (string name, string code, double unitPrice,
             string shortDescription, string description, string picture,

@@ -68,6 +68,13 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             }).FirstOrDefault(x=>x.Id==id);
         }
 
-       
+        public List<ProductViewModel> GetProducts()
+        {
+            return _context.Products.Select(x=> new ProductViewModel
+            {
+                Id=x.Id,
+                Name=x.Name
+            }).ToList();
+        }
     }
 }

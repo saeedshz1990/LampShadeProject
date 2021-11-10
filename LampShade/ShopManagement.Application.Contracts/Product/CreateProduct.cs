@@ -1,5 +1,4 @@
 ﻿using _0_FrameWork.Application;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using ShopManagement.Application.Contracts.ProductCategory;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;

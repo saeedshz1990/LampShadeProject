@@ -20,5 +20,6 @@ namespace ShopManagement.Application.Contracts.Product
 
         //return list productviewmodel
         List<ProductViewModel> Search(ProductSearchModel searchModel);
+        List<ProductViewModel> GetProducts();
     }
 }
