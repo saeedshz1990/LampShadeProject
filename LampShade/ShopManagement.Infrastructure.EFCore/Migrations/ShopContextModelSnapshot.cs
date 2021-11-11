@@ -165,6 +165,8 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
 
                     b.Property<bool>("IsRemoved");
 
+                    b.Property<string>("Link");
+
                     b.Property<string>("Picture")
                         .IsRequired()
                         .HasMaxLength(1000);

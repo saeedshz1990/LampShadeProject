@@ -18,3 +18,5 @@ C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Config
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Configuration\obj\Debug\netcoreapp2.2\ShopManagement.Configuration.csproj.CopyComplete
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Configuration\obj\Debug\netcoreapp2.2\ShopManagement.Configuration.dll
 C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Configuration\obj\Debug\netcoreapp2.2\ShopManagement.Configuration.pdb
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp2.2\01_LampShadeQuery.dll
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp2.2\01_LampShadeQuery.pdb

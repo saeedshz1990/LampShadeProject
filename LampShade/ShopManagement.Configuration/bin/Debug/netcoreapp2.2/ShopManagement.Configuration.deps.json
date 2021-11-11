@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v2.2": {
       "ShopManagement.Configuration/1.0.0": {
         "dependencies": {
+          "01_LampShadeQuery": "1.0.0",
           "JetBrains.Annotations": "2021.3.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
           "ShopManagement.Application": "1.0.0",
@@ -525,6 +526,14 @@
           "System.Runtime": "4.1.0"
         }
       },
+      "01_LampShadeQuery/1.0.0": {
+        "dependencies": {
+          "ShopManagement.Infrastructure.EFCore": "1.0.0"
+        },
+        "runtime": {
+          "01_LampShadeQuery.dll": {}
+        }
+      },
       "0_FrameWork/1.0.0": {
         "dependencies": {
           "EntityFramework": "6.4.4",
@@ -977,6 +986,11 @@
       "sha512": "sha512-k1S4Gc6IGwtHGT8188RSeGaX86Qw/wnrgNLshJvsdNUOPP9etMmo8S07c+UlOAx4K/xLuN9ivA1bD0LVurtIxQ==",
       "path": "system.threading.tasks/4.0.11",
       "hashPath": "system.threading.tasks.4.0.11.nupkg.sha512"
+    },
+    "01_LampShadeQuery/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "0_FrameWork/1.0.0": {
       "type": "project",

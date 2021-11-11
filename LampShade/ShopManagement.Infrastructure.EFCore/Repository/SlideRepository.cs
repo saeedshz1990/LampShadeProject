@@ -26,6 +26,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 BtnText=x.BtnText,
                 Picture=x.Picture,
                 PictureAlt=x.PictureAlt,
+                Link=x.Link,
                 PictureTitle=x.PictureTitle
             }).FirstOrDefault(x=>x.Id==id);
         }

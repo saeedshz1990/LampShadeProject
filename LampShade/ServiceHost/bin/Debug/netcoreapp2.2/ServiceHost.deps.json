@@ -187,6 +187,17 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "01_LampShadeQuery/1.0.0": {
+        "dependencies": {
+          "ShopManagement.Infrastructure.EFCore": "1.0.0"
+        },
+        "runtime": {
+          "01_LampShadeQuery.dll": {}
+        },
+        "compile": {
+          "01_LampShadeQuery.dll": {}
+        }
+      },
       "0_FrameWork/1.0.0": {
         "dependencies": {
           "EntityFramework": "6.4.4",
@@ -224,6 +235,7 @@
       },
       "ShopManagement.Configuration/1.0.0": {
         "dependencies": {
+          "01_LampShadeQuery": "1.0.0",
           "JetBrains.Annotations": "2021.3.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
           "ShopManagement.Application": "1.0.0",
@@ -3451,6 +3463,11 @@
       "sha512": "sha512-Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
       "path": "system.linq.queryable/4.0.1",
       "hashPath": "system.linq.queryable.4.0.1.nupkg.sha512"
+    },
+    "01_LampShadeQuery/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "0_FrameWork/1.0.0": {
       "type": "project",
