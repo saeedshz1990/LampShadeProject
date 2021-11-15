@@ -5,6 +5,7 @@ using System.Reflection.Metadata.Ecma335;
 using ShopManagement.Application.Contracts.ProductCategory;
 using ShopManagement.Domain.ProductCategoryAgg;
 using _0_FrameWork.Infrasutructure;
+using _0_Framework.Application;
 
 namespace ShopManagement.Infrastructure.EFCore.Repository
 {
@@ -50,7 +51,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Id = x.Id,
                 Name = x.Name,
                 Picture = x.Picture,
-                CreationDate = x.CreationDate.ToString(CultureInfo.InvariantCulture)
+                CreationDate = x.CreationDate.ToFarsi()
             });
 
             if (!string.IsNullOrWhiteSpace(searchModel.Name))

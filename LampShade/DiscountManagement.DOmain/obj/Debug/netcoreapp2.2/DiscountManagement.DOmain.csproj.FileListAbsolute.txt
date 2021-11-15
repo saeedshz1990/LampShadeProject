@@ -1,0 +1,16 @@
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\DiscountManagement.DOmain\bin\Debug\netcoreapp2.2\DiscountManagement.DOmain.deps.json
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\DiscountManagement.DOmain\bin\Debug\netcoreapp2.2\DiscountManagement.DOmain.dll
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\DiscountManagement.DOmain\bin\Debug\netcoreapp2.2\DiscountManagement.DOmain.pdb
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\DiscountManagement.DOmain\bin\Debug\netcoreapp2.2\0_FrameWork.dll
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\DiscountManagement.DOmain\bin\Debug\netcoreapp2.2\DiscountManagement.Application.Contract.dll
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\DiscountManagement.DOmain\bin\Debug\netcoreapp2.2\ShopManagement.Application.Contracts.dll
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\DiscountManagement.DOmain\bin\Debug\netcoreapp2.2\0_FrameWork.pdb
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\DiscountManagement.DOmain\bin\Debug\netcoreapp2.2\DiscountManagement.Application.Contract.pdb
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\DiscountManagement.DOmain\bin\Debug\netcoreapp2.2\ShopManagement.Application.Contracts.pdb
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\DiscountManagement.DOmain\obj\Debug\netcoreapp2.2\DiscountManagement.DOmain.csprojAssemblyReference.cache
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\DiscountManagement.DOmain\obj\Debug\netcoreapp2.2\DiscountManagement.DOmain.csproj.CoreCompileInputs.cache
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\DiscountManagement.DOmain\obj\Debug\netcoreapp2.2\DiscountManagement.DOmain.AssemblyInfoInputs.cache
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\DiscountManagement.DOmain\obj\Debug\netcoreapp2.2\DiscountManagement.DOmain.AssemblyInfo.cs
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\DiscountManagement.DOmain\obj\Debug\netcoreapp2.2\DiscountManagement.DOmain.csproj.CopyComplete
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\DiscountManagement.DOmain\obj\Debug\netcoreapp2.2\DiscountManagement.DOmain.dll
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\DiscountManagement.DOmain\obj\Debug\netcoreapp2.2\DiscountManagement.DOmain.pdb
