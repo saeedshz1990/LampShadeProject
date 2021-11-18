@@ -1,4 +1,5 @@
 using DiscountManagement.Configuration;
+using InventoryManagement.Infrastructure.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -24,6 +25,7 @@ namespace ServiceHost
             var connectionString = Configuration.GetConnectionString("LampShadeDB");
             ShopManagementBootstraper.Configure(services, connectionString);
             DiscountManagmentBootsraper.Configure(services, connectionString);
+            InventoryBootstrapper.Configure(services, connectionString);
 
 
             services.Configure<CookiePolicyOptions>(options =>

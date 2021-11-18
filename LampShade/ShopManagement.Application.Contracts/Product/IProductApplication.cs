@@ -11,10 +11,7 @@ namespace ShopManagement.Application.Contracts.Product
         //Fore Edit Product
         OperationResult Edit(EditProduct command);
 
-        OperationResult IsStock(long id);
-        OperationResult NotInStock(long id);
-
-
+       
         //Return EditProduct and Get Id
         EditProduct GetDetails(long id);
 

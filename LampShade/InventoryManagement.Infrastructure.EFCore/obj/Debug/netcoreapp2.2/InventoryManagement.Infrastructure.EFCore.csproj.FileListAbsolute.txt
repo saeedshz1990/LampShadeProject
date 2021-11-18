@@ -1,0 +1,4 @@
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\InventoryManagement.Infrastructure.EFCore\obj\Debug\netcoreapp2.2\InventoryManagement.Infrastructure.EFCore.csprojAssemblyReference.cache
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\InventoryManagement.Infrastructure.EFCore\obj\Debug\netcoreapp2.2\InventoryManagement.Infrastructure.EFCore.csproj.CoreCompileInputs.cache
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\InventoryManagement.Infrastructure.EFCore\obj\Debug\netcoreapp2.2\InventoryManagement.Infrastructure.EFCore.AssemblyInfoInputs.cache
+C:\Users\Saeed\source\repos\MVCFinalProject\Code\LampShade\InventoryManagement.Infrastructure.EFCore\obj\Debug\netcoreapp2.2\InventoryManagement.Infrastructure.EFCore.AssemblyInfo.cs

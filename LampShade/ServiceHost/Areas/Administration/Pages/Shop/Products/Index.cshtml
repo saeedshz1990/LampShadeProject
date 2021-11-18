@@ -1,4 +1,4 @@
-﻿ @page
+﻿@page
 
 @model ServiceHost.Areas.Administration.Pages.Shop.Products.IndexModel
 @{
@@ -35,7 +35,7 @@
                         <label class="sr-only" asp-for="SearchModel.CategoryId"></label>
                         <select class="form-control" asp-for="SearchModel.CategoryId" asp-item="Model.ProductCategories">
                             <option value="0">انتخاب گروه محصولی</option>
-                            
+
 
                         </select>
                     </div>
@@ -64,55 +64,30 @@
                                     <th>نام</th>
                                     <th>کد</th>
                                     <th>گروه</th>
-                                    <th>قیمت</th>
-                                    <th>موجودی</th>
                                     <th>تاریخ تولید</th>
                                     <th>عملیات</th>
                                 </tr>
                             </thead>
                             <tbody>
-                            @foreach (var item in Model.Products)
-                            {
-                                <tr>
-                                    <td>@item.Id</td>
-                                    <td>
-                                        <img src="~/ProductPictures/@item.Picture" style="width: 70px; height: 70px" />
-                                    </td>
-                                    <td>@item.Name</td>
-                                    <td>@item.Code</td>
-                                    <td>@item.Category</td>
-                                    <td>@item.UnitPrice</td>
-                                    <td class="text-center">
-                                        @if (item.IsInStock)
-                                        {
-                                            <i class="fa fa-2x fa-check text-success"></i>
-                                        }
-                                        else
-                                        {
-                                            <i class="fa fa-2x fa-remove text-danger"></i>
-                                        }
-                                    </td>
-
-                                    <td>@item.Creationdate</td>
-                                    <td>
-                                        <a class="btn btn-warning waves-effect waves-light m-b-5"
-                                           href="#showmodal=@Url.Page("./Index", "Edit", new { id = item.Id})">
-                                            <i class="fa fa-edit"></i> ویرایش
-                                        </a>
-                                        @if (item.IsInStock)
-                                        {
-                                            <a class="btn btn-warning waves-effect waves-light m-b-5" asp-page="./Index"
-                                               asp-page-handler="NotInStock" as-route-id="@item.Id">اتمام موجودی</a>
-                                        }
-                                        else
-                                        {
-                                            <a class="btn btn-success waves-effect waves-light m-b-5" asp-page="./Index"
-                                               asp-page-handler="IsInStock" as-route-id="@item.Id">موجود شد</a>
-                                        }
-
-                                    </td>
-                                </tr>
-                            }
+                                @foreach (var item in Model.Products)
+                                {
+                                    <tr>
+                                        <td>@item.Id</td>
+                                        <td>
+                                            <img src="~/ProductPictures/@item.Picture" style="width: 70px; height: 70px" />
+                                        </td>
+                                        <td>@item.Name</td>
+                                        <td>@item.Code</td>
+                                        <td>@item.Category</td>
+                                        <td>@item.Creationdate</td>
+                                        <td>
+                                            <a class="btn btn-warning waves-effect waves-light m-b-5"
+                                               href="#showmodal=@Url.Page("./Index", "Edit", new { id = item.Id})">
+                                                <i class="fa fa-edit"></i> ویرایش
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
                             </tbody>
                         </table>
                     </div>

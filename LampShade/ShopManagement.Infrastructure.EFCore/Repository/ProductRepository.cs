@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using Microsoft.EntityFrameworkCore;
 using ShopManagement.Application.Contracts.Product;
 using ShopManagement.Domain.ProductAgg;
@@ -13,9 +12,11 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
     {
         private readonly ShopContext _context;
 
+
         public ProductRepository(ShopContext context) : base(context)
         {
             _context = context;
+
         }
 
         public List<ProductViewModel> Search(ProductSearchModel searchModel)
@@ -29,9 +30,8 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                     CategoryId=x.CategoryId,
                     Code = x.Code,
                     Picture =x.Picture,
-                    UnitPrice = x.UnitPrice,
-                    IsInStock=x.IsInStock,
-                    Creationdate = x.CreationDate.ToFarsi()
+                    Creationdate = x.CreationDate.ToFarsi(),
+
                 });
 
             if (!string.IsNullOrWhiteSpace(searchModel.Name))
@@ -63,7 +63,6 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
                 ShortDescription=x.ShortDescription,
-                UnitPrice=x.UnitPrice,
 
             }).FirstOrDefault(x=>x.Id==id);
         }
