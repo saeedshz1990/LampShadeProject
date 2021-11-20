@@ -1,10 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+	  <!--<TargetFramework>netcoreapp2.2</TargetFramework>-->
+	  <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>_01_LampShadeQuery</RootNamespace>
   </PropertyGroup>
 
+	
+	
   <ItemGroup>
     <ProjectReference Include="..\ShopManagement.Infrastructure.EFCore\ShopManagement.Infrastructure.EFCore.csproj" />
   </ItemGroup>

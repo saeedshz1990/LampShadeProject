@@ -16,7 +16,7 @@ namespace InventoryManagement.Infrastructure.EFCore.Mapping
                 modelBuilder.HasKey(x => x.Id);
                 modelBuilder.ToTable("InventoryOperations");
                 modelBuilder.Property(x => x.Description).HasMaxLength(1000);
-                //modelBuilder.WithOwner(x => x.Inventory).HasForeignKey(x => x.InventoryId);
+                modelBuilder.WithOwner(x => x.Inventory).HasForeignKey(x => x.InventoryId);
             });
         }
     }
