@@ -35,7 +35,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Id = x.Id,
                 Name = x.Name,
                 Description = x.Description,
-                Picture = x.Picture,
+                // Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
                 MetaDescription = x.MetaDescription,
@@ -59,6 +59,11 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
 
             return query.OrderByDescending(x => x.Id).ToList();
 
+        }
+
+        public string GetSlugById(long id)
+        {
+            _context.ProductCategories.Select(x=> new {x.Id , x.Slug}).FirstOrDefault(x=>x.Id==id).Slug;
         }
     }
 }

@@ -26,6 +26,15 @@ namespace _0_Framework.Application
             return "";
         }
 
+         public static string ToDiscountFormat(this DateTime date)
+        {
+            
+                if (date new DateTime()) return "";
+                return $"{date.Year}/{date.Month}/{date.Day}";
+        }
+
+
+
         public static string ToFarsi(this DateTime date)
         {
             if (date == new DateTime()) return "";
