@@ -17,7 +17,7 @@ namespace ShopManagement.Infrastructure.EFCore.Mapping
 
             builder.HasOne(x=>x.Product)
             .WithMany(x=>x.Comments)
-            .HasForeignKey(x=>x.PRoductId);
+            .HasForeignKey(x=>x.ProductId);
         }
     }
 }
