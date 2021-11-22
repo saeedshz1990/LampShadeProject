@@ -1,4 +1,5 @@
 ﻿using _0_Framework.Application;
+using _01_LampShadeQuery.Contracts.Product;
 using _01_LampShadeQuery.Contracts.ProductCategory;
 using Microsoft.EntityFrameworkCore;
 using ShopManagement.Domain.ProductAgg;
@@ -99,7 +100,7 @@ namespace _01_LampShadeQuery.Query
                     PictureTitle=product.PictureTitle,
                     Slug=product.Slug,
                     Category=product.Category.Name
-                }).AsNoTracking().ToList();
+                }).ToList();
         }
 
         public ProductCategoryQueryModel GetProductCategoryWithProductsBy(string slug)

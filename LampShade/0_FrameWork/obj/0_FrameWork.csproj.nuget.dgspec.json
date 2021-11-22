@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\0_FrameWork\\0_FrameWork.csproj": {}
+    "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\0_FrameWork\\0_FrameWork.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\0_FrameWork\\0_FrameWork.csproj": {
+    "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\0_FrameWork\\0_FrameWork.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\0_FrameWork\\0_FrameWork.csproj",
+        "projectUniqueName": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\0_FrameWork\\0_FrameWork.csproj",
         "projectName": "0_FrameWork",
-        "projectPath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\0_FrameWork\\0_FrameWork.csproj",
+        "projectPath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\0_FrameWork\\0_FrameWork.csproj",
         "packagesPath": "C:\\Users\\Saeed\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\0_FrameWork\\obj\\",
+        "outputPath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\0_FrameWork\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -46,6 +46,18 @@
             "EntityFramework": {
               "target": "Package",
               "version": "[6.4.4, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Cookies": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

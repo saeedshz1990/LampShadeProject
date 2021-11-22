@@ -1,9 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using _01_LampShadeQuery.Contracts.ProductCategory;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ServiceHost.Pages.ProductCategory
@@ -13,7 +8,7 @@ namespace ServiceHost.Pages.ProductCategory
         public ProductCategoryQueryModel ProductCategory;
         private readonly IProductCategoryQuery _productCategoryQuery;
 
-        public ProductCategory(IProductCategoryQuery productCategoryQuery)
+        public ProductCategoryQueryModel (IProductCategoryQuery productCategoryQuery)
         {
             _productCategoryQuery=productCategoryQuery;
         }

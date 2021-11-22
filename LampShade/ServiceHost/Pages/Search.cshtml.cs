@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using _01_LampShadeQuery.Contracts.Product;
 using _01_LampShadeQuery.Contracts.Product.Product;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 

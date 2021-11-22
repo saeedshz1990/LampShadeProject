@@ -13583,9 +13583,9 @@
         }
       },
       {
-        "HashCode": -645531797,
+        "HashCode": 1056542928,
         "Kind": "MVC.ViewComponent",
-        "Name": "__Generated__LatestArrivalsViewComponentTagHelper",
+        "Name": "__Generated__ProductCategoryWithProductViewComponentTagHelper",
         "AssemblyName": "ServiceHost",
         "CaseSensitive": false,
         "TagMatchingRules": [],
@@ -13593,7 +13593,7 @@
           {
             "Id": "RZ3901",
             "Severity": 3,
-            "Message": "View component 'ServiceHost.ViewComponents.LatestArrivalsViewComponent' must have exactly one public method named 'Invoke' or 'InvokeAsync'.",
+            "Message": "View component 'ServiceHost.ViewComponents.ProductCategoryWithProductViewComponent' must have exactly one public method named 'Invoke' or 'InvokeAsync'.",
             "Span": {
               "FilePath": null,
               "AbsoluteIndex": -1,
@@ -13605,8 +13605,8 @@
         ],
         "Metadata": {
           "Runtime.Name": "ITagHelper",
-          "Common.TypeName": "__Generated__LatestArrivalsViewComponentTagHelper",
-          "MVC.ViewComponent.Name": "LatestArrivals"
+          "Common.TypeName": "__Generated__ProductCategoryWithProductViewComponentTagHelper",
+          "MVC.ViewComponent.Name": "ProductCategoryWithProduct"
         }
       },
       {
