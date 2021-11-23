@@ -3,12 +3,12 @@ using _0_FrameWork.Application;
 
 namespace ShopManagement.Application.Contracts.ProductCategory
 {
-    public interface IProductCategoryApplication
+    public interface IArticleCategoryApplication
     {
-        OperationResult Create(CreateProductCategory command);
-        OperationResult Edit(EditProductCategory command);
-        EditProductCategory GetDetails(long id); 
-        List<ProductCategoryViewModel> Search(ProductCategorySearchModel searchModel);
+        OperationResult Create(CreateArticleCategory command);
+        OperationResult Edit(EditArticleCategory command);
+        EditArticleCategory GetDetails(long id); 
+        List<ProductCategoryViewModel> Search(ArticleCategorySearchModel searchModel);
 
         List<ProductCategoryViewModel> GetProductCategories();
     }

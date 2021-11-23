@@ -28,9 +28,9 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             }).ToList();
         }
 
-        public EditProductCategory GetDetails(long id)
+        public EditArticleCategory GetDetails(long id)
         {
-            return _context.ProductCategories.Select(x => new EditProductCategory()
+            return _context.ProductCategories.Select(x => new EditArticleCategory()
             {
                 Id = x.Id,
                 Name = x.Name,
@@ -44,7 +44,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             }).FirstOrDefault(x => x.Id == id);
         }
 
-        public List<ProductCategoryViewModel> Search(ProductCategorySearchModel searchModel)
+        public List<ProductCategoryViewModel> Search(ArticleCategorySearchModel searchModel)
         {
             var query = _context.ProductCategories.Select(x => new ProductCategoryViewModel
             {

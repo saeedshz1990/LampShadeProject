@@ -3,26 +3,26 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ShopManagement.Application.Contracts.ProductCategory;
 
-namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategory
+namespace ServiceHost.Areas.Administration.Pages.Blog.ArticleCategories
 {
     public class IndexModel : PageModel
     {
         public ArticleCategorySearchModel SearchModel;
 
         //ProducCategoryViewModel use for Save
-        public List<ProductCategoryViewModel> ProductCategories;
+        public List<ArticleCategoryViewModel> ArticleCategories;
 
-        private readonly IArticleCategoryApplication _productCategoryApplication;
+        private readonly IArticleCategoryApplication _articleCategoryApplication;
 
-        public IndexModel(IArticleCategoryApplication productCategoryApplication)
+        public IndexModel(IArticleCategoryApplication articleCategoryApplication)
         {
-            _productCategoryApplication = productCategoryApplication;
+            _articleCategoryApplication = articleCategoryApplication;
         }
 
         public void OnGet(ArticleCategorySearchModel searchModel)
         {
             
-            ProductCategories = _productCategoryApplication.Search(searchModel);
+            ArticleCategories = _articleCategoryApplication.Search(searchModel);
         }
 
 
@@ -33,23 +33,20 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategory
 
         public JsonResult OnPostCreate(CreateArticleCategory command)
         {
-            var result = _productCategoryApplication.Create(command);
+            var result = _articleCategoryApplication.Create(command);
             return new JsonResult(result);
         }
 
         public IActionResult OnGetEdit(long id)
         {
-            var productCategory = _productCategoryApplication.GetDetails(id);
+            var productCategory = _articleCategoryApplication.GetDetails(id);
             return Partial("Edit", productCategory);
         }
 
         public JsonResult OnPostEdit(EditArticleCategory command)
         {
-            if(ModelState.IsValid)
-            {
-                
-            }
-            var result = _productCategoryApplication.Edit(command);
+  
+            var result = _articleCategoryApplication.Edit(command);
             return new JsonResult(result);
         }
 

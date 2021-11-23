@@ -9,7 +9,7 @@ using _0_FrameWork.Application;
 namespace ShopManagement.Application
 {
     
-    public class ProductCategoryApplication : IProductCategoryApplication
+    public class ProductCategoryApplication : IArticleCategoryApplication
     {
         private readonly IFileUploader _fileUploader;
         private readonly IProductCategoryRepository _productCategoryRepository;
@@ -21,7 +21,7 @@ namespace ShopManagement.Application
         }
 
 
-        public OperationResult Create(CreateProductCategory command)
+        public OperationResult Create(CreateArticleCategory command)
         {
             var operation = new OperationResult();
             if (_productCategoryRepository.Exists((x=>x.Name==command.Name)))
@@ -44,7 +44,7 @@ namespace ShopManagement.Application
 
         } 
 
-        public OperationResult Edit(EditProductCategory command)
+        public OperationResult Edit(EditArticleCategory command)
         {
             var operation = new OperationResult();
             var productCategory = _productCategoryRepository.Get(command.Id);
@@ -68,12 +68,12 @@ namespace ShopManagement.Application
 
         }
 
-        public EditProductCategory GetDetails(long id)
+        public EditArticleCategory GetDetails(long id)
         {
             return _productCategoryRepository.GetDetails(id);
         }
 
-        public List<ProductCategoryViewModel> Search(ProductCategorySearchModel searchModel)
+        public List<ProductCategoryViewModel> Search(ArticleCategorySearchModel searchModel)
         {
             return _productCategoryRepository.Search(searchModel);
         }

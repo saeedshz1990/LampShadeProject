@@ -3,7 +3,7 @@ using _0_FrameWork.Application;
 
 namespace ShopManagement.Application.Contracts.ProductCategory
 {
-    public class CreateProductCategory
+    public class CreateArticleCategory
     {
         [Required(ErrorMessage=ValidationMessages.IsRequired)]
         public string Name { get;  set; }

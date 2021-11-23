@@ -20,7 +20,9 @@ namespace BlogManagement.Infrastructure.EFCore.Repository
                 CanonicalAddress = x.CanonicalAddress,
                 Slug = x.Slug,
                 KeyWords = x.KeyWords,
-                ShowOrder = x.ShowOrder
+                ShowOrder = x.ShowOrder,
+                PictureAlt=x.PictureAlt,
+                PrictureTitle=x.PictureTitle
             }).FirstOrDefault(x => x.Id == id);
 
 
@@ -33,8 +35,8 @@ namespace BlogManagement.Infrastructure.EFCore.Repository
                 Name=x.Name,
                 Description=x.Description,
                 Picture=x.Picture,
-                ShowOrder=x.ShowOrder
-
+                ShowOrder=x.ShowOrder,
+                CreationDate=x.CreationDate.ToFarsi()
             });
             if(!string.IsNullOrWhiteSpace(searchModel.Name))
                 query=query.Where(x=>x.Name.Contains(searchModel.Name));
@@ -43,6 +45,13 @@ namespace BlogManagement.Infrastructure.EFCore.Repository
                 return query.OrderByDescending(x=>x.ShowOrder).ToList();
 
 
+        }
+
+        public string GetSlugBy(long id)
+        {
+             return _context.ArticleCategories
+             .Select(x => new {x.iD , x.Slug})
+             .FirstOrDefault(x=>x.Id==id).Slug;
         }
     }
 }
