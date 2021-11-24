@@ -38,7 +38,7 @@
         <div class="col-md-6">
             <div class="form-group">
                 <label asp-for="ShowOrder" class="control-label">ترتیب نمایش</label>
-                <input  class="form-control" asp-for="ShowOrder">
+                <input class="form-control" asp-for="ShowOrder">
                 <span asp-validation-for="ShowOrder" class="error"></span>
             </div>
         </div>
@@ -85,6 +85,15 @@
                     <textarea class="form-control autogrow" asp-for="MetaDescription"
                         style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
                     <span asp-validation-for="MetaDescription" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="command.CanonicalAddress" class="control-label">CanonicalAddress</label>
+                    <input type="text" class="form-control" asp-for="command.CanonicalAddress">
+                    <span asp-validation-for="command.CanonicalAddress" class="error"></span>
                 </div>
             </div>
         </div>

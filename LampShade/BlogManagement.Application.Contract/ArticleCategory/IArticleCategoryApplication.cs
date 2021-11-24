@@ -2,12 +2,12 @@ namespace BlogManagement.Application.Contract.ArticleCategory
 {
     public interface IArticleCategoryAppdlication
     {
-         OperationResult Create(CreateArticleCategory command);
-         OperationResult Edit(EditArticleCategory command);
-         EditArticleCategory GetDetails(long id);
+        EditArticleCategory GetDetails(long id);
+        OperationResult Edit(EditArticleCategory command);
+        List<ArticleCategoryViewModel> GetArticleCategories();
+        OperationResult Create(CreateArticleCategory command);
+        List<ArticleCategoryViewModel> Search(ArticleCategorySearchModel searchModel);
 
-         List<ArticleCategoryViewModel> Search(ArticleCategorySearchModel searchModel);
-         
 
     }
 }

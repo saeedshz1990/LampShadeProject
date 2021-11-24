@@ -22,10 +22,10 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Products
 
 
         private readonly IProductApplication _productApplication;
-        private readonly IArticleCategoryApplication _productCategoryApplication;
+        private readonly IArticleApplication _productCategoryApplication;
 
         public IndexModel(IProductApplication productApplication,
-            IArticleCategoryApplication productCategoryApplication)
+            IArticleApplication productCategoryApplication)
         {
             _productApplication = productApplication;
             _productCategoryApplication = productCategoryApplication;

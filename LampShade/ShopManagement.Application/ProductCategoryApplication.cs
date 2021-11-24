@@ -9,7 +9,7 @@ using _0_FrameWork.Application;
 namespace ShopManagement.Application
 {
     
-    public class ProductCategoryApplication : IArticleCategoryApplication
+    public class ProductCategoryApplication : IArticleApplication
     {
         private readonly IFileUploader _fileUploader;
         private readonly IProductCategoryRepository _productCategoryRepository;
@@ -73,7 +73,7 @@ namespace ShopManagement.Application
             return _productCategoryRepository.GetDetails(id);
         }
 
-        public List<ProductCategoryViewModel> Search(ArticleCategorySearchModel searchModel)
+        public List<ProductCategoryViewModel> Search(ArticleSearchModel searchModel)
         {
             return _productCategoryRepository.Search(searchModel);
         }

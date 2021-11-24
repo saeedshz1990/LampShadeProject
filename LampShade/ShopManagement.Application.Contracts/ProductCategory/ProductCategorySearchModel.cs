@@ -1,8 +1,9 @@
 ﻿namespace ShopManagement.Application.Contracts.ProductCategory
 {
-    public class ArticleCategorySearchModel
+    public class ArticleSearchModel
     {
-        public string Name { get; set; }
+        public string Title { get; set; }
+        public long CategoryId { get; set; }
 
     }
 }

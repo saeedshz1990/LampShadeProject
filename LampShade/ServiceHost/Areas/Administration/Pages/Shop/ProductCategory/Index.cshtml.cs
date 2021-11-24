@@ -7,19 +7,19 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategory
 {
     public class IndexModel : PageModel
     {
-        public ArticleCategorySearchModel SearchModel;
+        public ArticleSearchModel SearchModel;
 
         //ProducCategoryViewModel use for Save
         public List<ProductCategoryViewModel> ProductCategories;
 
-        private readonly IArticleCategoryApplication _productCategoryApplication;
+        private readonly IArticleApplication _productCategoryApplication;
 
-        public IndexModel(IArticleCategoryApplication productCategoryApplication)
+        public IndexModel(IArticleApplication productCategoryApplication)
         {
             _productCategoryApplication = productCategoryApplication;
         }
 
-        public void OnGet(ArticleCategorySearchModel searchModel)
+        public void OnGet(ArticleSearchModel searchModel)
         {
             
             ProductCategories = _productCategoryApplication.Search(searchModel);

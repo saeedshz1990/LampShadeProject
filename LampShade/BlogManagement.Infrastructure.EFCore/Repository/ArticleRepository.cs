@@ -36,7 +36,7 @@ namespace BlogManagement.Infrastructure.EFCore.Repository
                 Id = x.Id,
                 Title = x.Title,
                 PublishDate = x.PublishDate.ToFarsi(),
-                ShortDescription=x.ShortDescription
+                ShortDescription=x.ShortDescription.substring(0,Math.Min(x.ShortDescription.Lenght,50)) + "....."
             });
 
             if(!string.IsNullOrWhiteSpace(searchModel.Title))

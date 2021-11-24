@@ -4,11 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ServiceHost.ViewComponents
 {
-    public class ProductCategoryWithProductViewComponent : ViewComponent
+    public class LatestArrivalsViewComponent : ViewComponent
     {
         private readonly IProductQuery _productQuery;
 
-        public ProductCategoryWithProductViewComponent(IProductQuery productQuery)
+        public LatestArrivalsViewComponent(IProductQuery productQuery)
         {
             _productQuery = productQuery;
         }
