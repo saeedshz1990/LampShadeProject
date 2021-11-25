@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "unf4Mh5/+mAbFVQr5a/yNCaB2MRfTzOs3v+SjVX4aZq8Ke0qPbFKSgmcfeOAIvl2M04oCXLH27xDNPYUHM4+eg==",
+  "dgSpecHash": "C9PQO0I+Ch/Oj7B2/W96dEDbypHNhiIeJe+cspMEnCyhAC1KP5yKYOzQvzNysFfFqhPBBaIPuPCT0RYp22XaNQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\DiscountManagement.DOmain\\DiscountManagement.DOmain.csproj",
+  "projectFilePath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\DiscountManagement.DOmain\\DiscountManagement.DOmain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Saeed\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

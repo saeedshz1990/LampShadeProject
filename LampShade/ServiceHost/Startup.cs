@@ -1,3 +1,5 @@
+using System.Text.Encodings.Web;
+using System.Text.Unicode;
 using DiscountManagement.Configuration;
 using InventoryManagement.Infrastructure.Configuration;
 using Microsoft.AspNetCore.Builder;
@@ -28,6 +30,9 @@ namespace ServiceHost
             DiscountManagmentBootsraper.Configure(services, connectionString);
             InventoryBootstrapper.Configure(services, connectionString);
             BlogManagementBootstrapper.Configure(services, connectionString);
+           CommentManagementBootstraper.Configure(services, connectionString);
+
+            services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Arabic));
             
                 services.AddTransient<IFileUpoader,FileUploader>();
             services.Configure<CookiePolicyOptions>(options =>

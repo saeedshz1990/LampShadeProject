@@ -4,6 +4,7 @@ namespace _01_LampShadeQuery.Contracts.Article
 {
     public class ArticleQueryModel
 {
+    public long Id { get; set; }
     public string Title { get; set; }
     public string ShortDescription { get; set; }
     public string Description { get; set; }
@@ -19,7 +20,7 @@ namespace _01_LampShadeQuery.Contracts.Article
     public long CategoryId { get; set; }
     public string CategoryName { get; set; }
     public string CategorySlug { get; set; }
-
-
+    public List<commentQueryModel> Comments { get; set; }
+    
 }
 }

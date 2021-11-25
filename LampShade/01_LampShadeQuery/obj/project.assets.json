@@ -6868,11 +6868,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\01_LampShadeQuery\\01_LampShadeQuery.csproj",
+      "projectUniqueName": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\01_LampShadeQuery\\01_LampShadeQuery.csproj",
       "projectName": "01_LampShadeQuery",
-      "projectPath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\01_LampShadeQuery\\01_LampShadeQuery.csproj",
+      "projectPath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\01_LampShadeQuery\\01_LampShadeQuery.csproj",
       "packagesPath": "C:\\Users\\Saeed\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\01_LampShadeQuery\\obj\\",
+      "outputPath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\01_LampShadeQuery\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6892,8 +6892,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
-              "projectPath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
+            "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
+              "projectPath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
             }
           }
         }

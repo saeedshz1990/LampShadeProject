@@ -6953,11 +6953,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj",
+      "projectUniqueName": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj",
       "projectName": "InventoryManagement.Infrastructure.Configuration",
-      "projectPath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj",
+      "projectPath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj",
       "packagesPath": "C:\\Users\\Saeed\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\InventoryManagement.Infrastructure.Configuration\\obj\\",
+      "outputPath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\InventoryManagement.Infrastructure.Configuration\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6977,14 +6977,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\InventoryManagement.Application\\InventoryManagement.Application.csproj": {
-              "projectPath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\InventoryManagement.Application\\InventoryManagement.Application.csproj"
+            "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\InventoryManagement.Application\\InventoryManagement.Application.csproj": {
+              "projectPath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\InventoryManagement.Application\\InventoryManagement.Application.csproj"
             },
-            "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
-              "projectPath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
+            "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+              "projectPath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
             },
-            "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj": {
-              "projectPath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj"
+            "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj": {
+              "projectPath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj"
             }
           }
         }

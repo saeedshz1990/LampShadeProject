@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "82dvmhUvKEzflYEOBtR/osWp+siC0b55qnzAhibtkyRMzKkqTYAu2J32l753qU/IcpM5Yf70VDg/K13y9DR5MQ==",
+  "dgSpecHash": "AciJgfT0UOg2G9nS89q8gpuFDuhjVztsLcT+je7NXtNfBnT4kc2aut2bQoJNI7wXICRQaGp4WvpcmDZsxhAfiQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\ShopManagement.Application\\ShopManagement.Application.csproj",
+  "projectFilePath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\ShopManagement.Application\\ShopManagement.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Saeed\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

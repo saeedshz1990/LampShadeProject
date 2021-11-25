@@ -28,24 +28,4 @@ namespace _01_LampShadeQuery.Contracts.Product
         
 
     }
-
-
-
-    public class ProductPictureQueryModel
-    {
-        public string Picture { get; set; }
-        public string PictureAlt { get; set; }
-        public string PictureTitle { get; set; }
-
-    }
-
-
-    public class CommentQueryModel
-    {
-        public long Id { get; set; }
-        public string Name { get; set; }
-        public string Message { get; set; }
-        // public bool IsConfirmed { get; set; }
-        // public bool IsCanceled { get; set; }
-    }
 }

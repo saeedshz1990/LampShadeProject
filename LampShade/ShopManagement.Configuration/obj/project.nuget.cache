@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PnwqE2hECSjhKWCl3uR+6Ffy/QeZaN18YT0i8ozspyGj7o84hua6GJp4XJ4UkxMHIs6TKL/Z20E+9GWiIH1jKA==",
+  "dgSpecHash": "17uVt8IXE3/DmxKgE/RUhYPY/47031t2AXFaJE1/vOtAxkqcFBqZB4lqDpLUfYPsk9l/4bi3hRQPPm04/tKPLg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj",
+  "projectFilePath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Saeed\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Saeed\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

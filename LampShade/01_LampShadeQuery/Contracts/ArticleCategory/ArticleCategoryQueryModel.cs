@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using _01_LampShadeQuery.Contracts.Article;
 
 namespace _01_LampShadeQuery.Contracts.ArticleCategory
 {
@@ -12,9 +13,13 @@ namespace _01_LampShadeQuery.Contracts.ArticleCategory
         public int ShowOrder { get;  set; }
         public string Slug { get;  set; }
         public string KeyWords { get;  set; }
+        public List<string> KeyWordList { get;  set; }
         public string Metadescription { get;  set; }
         public string CanonicalAddress { get;  set; }
         public long ArticlesCount { get; set; }
+        public List<ArticleQueryModel> Articles { get; set; }
+        
+        
         
         
     }

@@ -2350,11 +2350,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\ShopManagement.Application\\ShopManagement.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\ShopManagement.Application\\ShopManagement.Application.csproj",
       "projectName": "ShopManagement.Application",
-      "projectPath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\ShopManagement.Application\\ShopManagement.Application.csproj",
+      "projectPath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\ShopManagement.Application\\ShopManagement.Application.csproj",
       "packagesPath": "C:\\Users\\Saeed\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\ShopManagement.Application\\obj\\",
+      "outputPath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\ShopManagement.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -2374,11 +2374,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
-              "projectPath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+            "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+              "projectPath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
             },
-            "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
-              "projectPath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
+            "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+              "projectPath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
             }
           }
         }

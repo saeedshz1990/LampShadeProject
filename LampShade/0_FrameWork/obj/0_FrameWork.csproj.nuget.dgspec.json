@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\0_FrameWork\\0_FrameWork.csproj": {}
+    "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\0_FrameWork\\0_FrameWork.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\0_FrameWork\\0_FrameWork.csproj": {
+    "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\0_FrameWork\\0_FrameWork.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\0_FrameWork\\0_FrameWork.csproj",
+        "projectUniqueName": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\0_FrameWork\\0_FrameWork.csproj",
         "projectName": "0_FrameWork",
-        "projectPath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\0_FrameWork\\0_FrameWork.csproj",
+        "projectPath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\0_FrameWork\\0_FrameWork.csproj",
         "packagesPath": "C:\\Users\\Saeed\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\0_FrameWork\\obj\\",
+        "outputPath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\0_FrameWork\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

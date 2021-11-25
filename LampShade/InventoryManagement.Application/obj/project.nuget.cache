@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HTvSIWzIWwJoWdat7hut0rPn1ChMJ7nUh3i1J4oaG0qDbeyZVo8Lvf13rAL66eNyAiS/iWgaHsCmJ9LoXvkg1Q==",
+  "dgSpecHash": "ldIA1lG+Mm2ge66gWqvv4UCtOqw2MUUMtYXpsO6Dfuu7OalLAKn9g00y0Kf1VAklNnEt69mraOogmjPcyg9v0Q==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
+  "projectFilePath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Saeed\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

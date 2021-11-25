@@ -2350,11 +2350,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\DiscountManagement.DOmain\\DiscountManagement.DOmain.csproj",
+      "projectUniqueName": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\DiscountManagement.DOmain\\DiscountManagement.DOmain.csproj",
       "projectName": "DiscountManagement.DOmain",
-      "projectPath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\DiscountManagement.DOmain\\DiscountManagement.DOmain.csproj",
+      "projectPath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\DiscountManagement.DOmain\\DiscountManagement.DOmain.csproj",
       "packagesPath": "C:\\Users\\Saeed\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\DiscountManagement.DOmain\\obj\\",
+      "outputPath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\DiscountManagement.DOmain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -2374,11 +2374,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\0_FrameWork\\0_FrameWork.csproj": {
-              "projectPath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\0_FrameWork\\0_FrameWork.csproj"
+            "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\0_FrameWork\\0_FrameWork.csproj": {
+              "projectPath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\0_FrameWork\\0_FrameWork.csproj"
             },
-            "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
-              "projectPath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
+            "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+              "projectPath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
             }
           }
         }

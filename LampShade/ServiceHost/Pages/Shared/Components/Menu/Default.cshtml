@@ -1,5 +1,7 @@
-﻿@model List<_01_LampShadeQuery.Contracts.ProductCategory.ProductCategoryQueryModel>
+﻿@model _01_LampShadeQuery.MenuModel
+@{
 
+}
 
     <div class="header-area header-sticky">
         <div class="container">
@@ -18,25 +20,27 @@
                                         <a asp-page="/Index">صفحه اصلی</a>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="blog-left-sidebar.html">محصولات</a>
+                                        <a >محصولات</a>
                                         <ul class="sub-menu">
+                                              @foreach (var category in Model.ProductCategories)
+                                              {
                                             <li>
-                                                <a href="blog-left-sidebar.html">دکوری</a>
+                                                <a asp-page="./ProductCAtegory" asp-route-id="@category.Slug">@category.Name</a>
                                             </li>
-                                            <li>
-                                                <a href="blog-right-sidebar.html">نگه دارنده</a>
-                                            </li>
-                                        </ul>
+                                                  
+                                              }      
+s                                        </ul>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="blog-left-sidebar.html">مقالات</a>
+                                        <a>مقالات</a>
                                         <ul class="sub-menu">
+                                             @foreach (var category in Model.ArticleCategories)
+                                              {
                                             <li>
-                                                <a href="blog-left-sidebar.html">گروه 1</a>
+                                                <a asp-page="./ArticleCategory" asp-route-id="@category.Slug">@category.Name</a>
                                             </li>
-                                            <li>
-                                                <a href="blog-right-sidebar.html">گروه 2</a>
-                                            </li>
+                                                  
+                                              }      
                                         </ul>
                                     </li>
 

@@ -1,9 +1,8 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using ShopManagement.Application.Contracts.Comment;
 
-namespace ServiceHost.Areas.Administration.Pages.Shop.Comment
+namespace ServiceHost.Areas.Administration.Pages.Comment
 {
     public class IndexModel : PageModel
     {

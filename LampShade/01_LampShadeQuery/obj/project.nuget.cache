@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/RW/h8/bjcjCRbe85+kSsetbYYLw/6IgyZrsX7T5kSPMSptqsOh6Oj4qbst6geRApS62Qtb58wCB3x8f8JsZvg==",
+  "dgSpecHash": "37eRzSxO2WK+8Cttg5NK2EKjXp2L4pM9jtlu/EB92HQMFr6tIwUaMc8kCf5oub9zNQIXFynKolEecfVzIP8pMg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\01_LampShadeQuery\\01_LampShadeQuery.csproj",
+  "projectFilePath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\01_LampShadeQuery\\01_LampShadeQuery.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Saeed\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Saeed\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

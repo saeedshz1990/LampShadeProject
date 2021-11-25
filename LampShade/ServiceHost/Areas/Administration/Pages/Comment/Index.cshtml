@@ -59,38 +59,38 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            @foreach (var item in Model.Comments)
-                            {
-                                <tr>
-                                    <td>@item.Id</td>
-                                    <td>@item.Name</td>
-                                    <td>@item.Email</td>
-                                    <td>@item.Message</td>
-                                    <td>@item.CommentDate</td>
-                                    <td class="text-center">
-                                        @if (item.IsCanceled)
-                                        {
-                                            <span class=" text-danger">تائید نشده</span>
-                                        }
-                                        @if (!item.IsCanceled && !item.IsConfirmed)
-                                        {
-                                            <span class=" text-Warning">در انتظار</span>
-                                        }
-                                        @if (!item.IsCanceled && item.IsConfirmed)
-                                        {
-                                            <span class=" text-Success">تائید شده</span>
-                                        }
-                                    </td>
-                                    <a class="btn btn-danger waves-effect waves-light m-b-5" asp-page="./Index"
-                                               asp-page-handler="cancel" as-route-id="@item.Id">کنسل</a>
-                                        @if (!item.IsCanceled && !item.IsConfirmed)
-                                        {
-                                            <a class="btn btn-success waves-effect waves-light m-b-5" asp-page="./Index"
-                                               asp-page-handler="Confirm" as-route-id="@item.Id">تائید</a>
-                                        }
-                                    </td>
-                                </tr>
-                            }
+                                @foreach (var item in Model.Comments)
+                                {
+                                    <tr>
+                                        <td>@item.Id</td>
+                                        <td>@item.Name</td>
+                                        <td>@item.Email</td>
+                                        <td>@item.Message</td>
+                                        <td>@item.CommentDate</td>
+                                        <td class="text-center">
+                                            @if (item.IsCanceled)
+                                            {
+                                                <span class=" text-danger">تائید نشده</span>
+                                            }
+                                            @if (!item.IsCanceled && !item.IsConfirmed)
+                                            {
+                                                <span class=" text-Warning">در انتظار</span>
+                                            }
+                                            @if (!item.IsCanceled && item.IsConfirmed)
+                                            {
+                                                <span class=" text-Success">تائید شده</span>
+                                            }
+                                        </td>
+                                            <a class="btn btn-danger waves-effect waves-light m-b-5" asp-page="./Index"
+                                                asp-page-handler="cancel" as-route-id="@item.Id">کنسل</a>
+                                            @if (!item.IsCanceled && !item.IsConfirmed)
+                                            {
+                                                <a class="btn btn-success waves-effect waves-light m-b-5" asp-page="./Index"
+                                                asp-page-handler="Confirm" as-route-id="@item.Id">تائید</a>
+                                            }
+                                        </td>
+                                    </tr>
+                                }
                             </tbody>
                         </table>
                     </div>

@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
-using System.Reflection.Metadata.Ecma335;
 using ShopManagement.Application.Contracts.ProductCategory;
 using ShopManagement.Domain.ProductCategoryAgg;
 using _0_FrameWork.Infrasutructure;
@@ -35,7 +33,6 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Id = x.Id,
                 Name = x.Name,
                 Description = x.Description,
-                // Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
                 MetaDescription = x.MetaDescription,
@@ -54,8 +51,8 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 CreationDate = x.CreationDate.ToFarsi()
             });
 
-            if (!string.IsNullOrWhiteSpace(searchModel.Name))
-                query = query.Where(x => x.Name.Contains(searchModel.Name));
+            if (!string.IsNullOrWhiteSpace(searchModel.Title))
+                query = query.Where(x => x.Name.Contains(searchModel.Title));
 
             return query.OrderByDescending(x => x.Id).ToList();
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nwEx/KczbT1bRPV+R7JxTs+rD4Bhgb4ySWKC2mqhncjFnYC4nJXdNoXxQCH1nx8FVzxm0U/Sc7L3FPWL6JZSaQ==",
+  "dgSpecHash": "fI1WLwF+4VGy581tKry1oL708Am+jshKMq6FnUsaVx75aYdC1Vk78z/+nzk66Z5Ttuaq/T6KD5HCv9KL0KqtaQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj",
+  "projectFilePath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Saeed\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Saeed\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

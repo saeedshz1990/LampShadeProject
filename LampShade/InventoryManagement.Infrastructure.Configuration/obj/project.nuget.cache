@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YkP6EbzViVdqytN7z+Xq+7jlveIuEfSs1bjh8zXhrYKEJYkPUO5fOeHsmKhAhhIh7V1Di2dPPfP4nSkHRH676A==",
+  "dgSpecHash": "9XneBnGmhgciFkNuqHT1RaUU9oF/C5iEDIB85rwzuoB0ISaY1cB3SpCUruki0ZUl9CE5gzqVeotGYy1mlwCV2g==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj",
+  "projectFilePath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Saeed\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Saeed\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

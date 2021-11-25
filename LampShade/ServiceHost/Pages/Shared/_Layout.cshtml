@@ -4,7 +4,17 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lampshapde Store</title>
+    @if(ViewData[" Title"]!= null)
+    {
+        <title  itle>@ViewData["Title"] | فروشگاه لوازم خانگی</title>
+
+    }
+    else
+    {
+        <title>فروشگاه لوازم خانگی</title>
+    }
+    <meta name="keywords" content="@ViewData["Title"]" />
+    <meta name="description" content="@ViewData["metadescription"]" />
 
     <!-- Vendor CSS -->
     <link href="~/Theme/assets/css/vendors.css" rel="stylesheet">

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+YaptNOgbX/9lb1DWgEEF8sYBvUsuZuwLL13UpAGCsX8iiunp7zEDOojq8NhQ9FGhy/qH8H3B0KbsRkAdD1VvA==",
+  "dgSpecHash": "zyTh4teVgznyap9mMMrANorrgOAaCA62HKrDi3oDRYxiRoq54UmWfnbec2xw/qO7PLiORc3RBu9qUCm4Qp3+7Q==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\ServiceHost\\ServiceHost.csproj",
+  "projectFilePath": "C:\\Users\\Saeed\\source\\repos\\MVCFinalProject\\Code\\LampShade\\ServiceHost\\ServiceHost.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Saeed\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Saeed\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

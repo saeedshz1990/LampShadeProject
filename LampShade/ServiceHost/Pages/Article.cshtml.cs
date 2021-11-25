@@ -12,10 +12,13 @@ namespace ServiceHost.Pages
         public List<ArticleCategoryQueryModel> articleCategories;
         private readonly IArticleQuery _articleQuery;
         private readonly IArticleCategoryQuery _articleCategoryQuery;
+        private readonly ICommentApplication _commentApplication;
 
-        public ArticleModel(IArticleQuery articleQuery , IArticleCategoryQuery articleCategoryQuery)
+        public ArticleModel(IArticleQuery articleQuery , 
+        IArticleCategoryQuery articleCategoryQuery,ICommentApplication commentApplication)
         {
             _articleQuery = articleQuery;
+            _commentApplication= commentApplication;
             _articleCategoryQuery=articleCategoryQuery;
         }
 
@@ -25,5 +28,13 @@ namespace ServiceHost.Pages
             LatestArticles=_articleQuery.LatestArtticles();
             articleCategories=_articleCategoryQuery.GetArticleCategories();
         }
+
+        public IActionResult OnPost(AddComment command , string articleSlug)
+        {
+            command.Type=CommentType.Article
+            var result=_commentApplication.Add(command);
+            return RedirectToPage("/Article", new {Id=articleSlug});
+        }
+
     }
 }

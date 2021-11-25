@@ -3,14 +3,12 @@ using System.Data.Entity;
 using System.Linq;
 using _0_Framework.Application;
 using _0_FrameWork.Infrasutructure;
-using ShopManagement.Application.Contracts.Comment;
-using ShopManagement.Domain.CommentAgg;
 
-namespace ShopManagement.Infrastructure.EFCore.Repository
+namespace CommentManagement.Infrastructure.EFCore.Repository
 {
     public class CommentRepository : RepositoryBase<long, Comment>, ICommentRepository
     {
-        private readonly ShopContext _contex;
+        private readonly CommentContext _contex;
 
         public CommentRepository(ShopContext contex) : base(contex)
         {
@@ -20,17 +18,18 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
         public List<CommentViewModel> Search(CommentSearchModel searchModel)
         {
             var query=_contex.Comments
-            .Include(x=>x.Product)
             .Select(x=> new CommentViewModel
             { 
                 Id=x.Id,
+                Name=x.Name,
+                Type=x.Type,
                 Email=x.Email,
+                Message=x.Message,
+                Website=x.Website,
+                OwnerName=x.OwnerName,
                 IsCanceled=x.IsCanceled,
                 IsConfirmed=x.IsConfirmed,
-                Message=x.Message,
-                Name=x.Name,
-                ProductId=x.ProductId,
-                ProductName=x.Product.Name,
+                OwnerRecordId=x.OwnerRecordId,
                 CommentDate=x.CreationDate.ToFarsi()
             });
 
