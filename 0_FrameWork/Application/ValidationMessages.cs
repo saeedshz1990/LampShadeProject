@@ -1,0 +1,11 @@
+﻿namespace _0_FrameWork.Application
+{
+    public class ValidationMessages
+    {
+        public const string IsRequired = "مقدار فیلد نمی تواند خالی باشد";
+        public const string MaxFileSize = "فایل حجیم تر از حد مجاز می باشد";
+        public const string InvalidFileFotmat = "فزمت فایل مجاز نمی باشد";
+
+
+    }
+}
