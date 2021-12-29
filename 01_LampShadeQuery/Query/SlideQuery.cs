@@ -16,7 +16,8 @@ namespace _01_LampShadeQuery.Query
 
         public List<SlideQueryModel> GetSlides()
         {
-            return _shopContext.Slides.Where(x => x.IsRemoved == false).Select(x => new SlideQueryModel
+            return _shopContext.Slides.Where(x => x.IsRemoved == false)
+                .Select(x => new SlideQueryModel
             {
                 Text = x.Text,
                 Title = x.Title,

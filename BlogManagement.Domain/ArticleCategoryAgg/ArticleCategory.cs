@@ -19,7 +19,7 @@ namespace BlogManagement.Domain.ArticleCategoryAgg
         public List<Article> Articles { get; private set; }
 
         public ArticleCategory(string name, string picture, string pictureAlt, string pictureTitle,
-            string description, int showOrder, string slug, string keyWOrds, string metadescription,
+            string description, int showOrder, string slug, string keyWords, string metadescription,
             string canonicalAddress)
         {
             Name = name;
@@ -29,7 +29,7 @@ namespace BlogManagement.Domain.ArticleCategoryAgg
             Description = description;
             ShowOrder = showOrder;
             Slug = slug;
-            KeyWords = keyWOrds;
+            KeyWords = keyWords;
             Metadescription = metadescription;
             CanonicalAddress = canonicalAddress;
         }
