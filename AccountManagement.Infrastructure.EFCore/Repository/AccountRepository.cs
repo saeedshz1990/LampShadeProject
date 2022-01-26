@@ -2,6 +2,7 @@
 using _0_FrameWork.Infrasutructure;
 using AccountManagement.Application.Contracts.Account;
 using AccountManagement.Domain.AccountAgg;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,11 @@ namespace AccountManagement.Infrastructure.EFCore.Repository
             _context = context;
         }
 
+        public Account GetBy(string userName)
+        {
+            return _context.Account.FirstOrDefault(x => x.Username == userName);
+        }
+
         public EditAccount GetDetails(long id)
         {
             return _context.Account.Select(x => new EditAccount
@@ -32,14 +38,16 @@ namespace AccountManagement.Infrastructure.EFCore.Repository
 
         public List<AccountViewModel> Search(AccountSearchodel searchodel)
         {
-            var query= _context.Account.Select(x => new AccountViewModel {
+            var query= _context.Account
+                .Include(x=>x.Role)
+                .Select(x => new AccountViewModel {
                 Id = x.Id,
                 Fullname = x.Fullname,
                 Mobile = x.Mobile,
                 Username = x.Username,
                 ProfilePhoto=x.ProfilePhoto,
-                RoleId=2,
-                Role="مدیرسیستم",
+                RoleId=x.RoleId,
+                Role=x.Role.Name,
                 CreationDate=x.CreationDate.ToFarsi()
             });
 
