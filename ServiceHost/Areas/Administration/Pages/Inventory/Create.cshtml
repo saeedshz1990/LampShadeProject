@@ -11,13 +11,12 @@
       method="post"
       data-ajax="true"
       data-callback=""
-      data-action="Refresh"
-      enctype="multipart/form-data">
+      data-action="Refresh">
     <div class="modal-body">
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
-                    <label asp-for="ProductId" class="control-label"> محصولات</label>
+                    <label asp-for="ProductId" class="control-label"> انتخاب محصول</label>
                     <select class="form-control" asp-for="ProductId"
                             asp-items='new SelectList(Model.Products,"Id","Name")'>
                         <option value="0">انتخاب محصول</option>

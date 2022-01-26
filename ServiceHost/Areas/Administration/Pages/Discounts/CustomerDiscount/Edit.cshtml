@@ -11,8 +11,7 @@
       method="post"
       data-ajax="true"
       data-callback=""
-      data-action="Refresh"
-      enctype="multipart/form-data">
+      data-action="Refresh">
     <div class="modal-body">
         <div class="row">
             <div class="col-md-6">
@@ -52,7 +51,7 @@
                 <div class="col-md-12">
                     <div class="form-group">
                         <label asp-for="Reason" class="control-label">علت تخفیف</label>
-                        <input class="form-control persianDateInput" asp-for="Reason">
+                        <input class="form-control " asp-for="Reason">
                         <span asp-validation-for="Reason" class="error"></span>
                     </div>
                 </div>

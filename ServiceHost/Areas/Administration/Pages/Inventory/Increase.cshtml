@@ -11,21 +11,22 @@
       method="post"
       data-ajax="true"
       data-callback=""
-      data-action="Refresh"
-      enctype="multipart/form-data">
+      data-action="Refresh">
     <div class="modal-body">
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
-                    <label asp-for="Count" class="control-label">تعداد</label>
-                    <input type="text" class="form-control " asp-for="Count">
+                    <label asp-for="Count" class="control-label">انتخاب محصول</label>
+                    <input class="form-control" asp-for="Count" />
                     <span asp-validation-for="Count" class="error"></span>
                 </div>
             </div>
+        </div>
+        <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
                     <label asp-for="Description" class="control-label">توضیحات</label>
-                    <textarea row="3" class="form-control " asp-for="Description"></textarea>
+                    <textarea rows="3" class="form-control" asp-for="Description"></textarea>
                     <span asp-validation-for="Description" class="error"></span>
                 </div>
             </div>
@@ -34,6 +35,6 @@
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
-        <button type="submit" class="btn btn-info waves-effect waves-light">افزایش </button>
+        <button type="submit" class="btn btn-info waves-effect waves-light">افزایش</button>
     </div>
 </form>

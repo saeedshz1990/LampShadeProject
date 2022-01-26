@@ -60,7 +60,9 @@ namespace ShopManagement.Infrasutructure.EFCore.Repository
 
         public string GetSlugById(long id)
         {
-            return _context.ProductCategories.Select(x => new { x.Id, x.Slug }).FirstOrDefault(x => x.Id == id).Slug;
+            return _context.ProductCategories.
+                Select(x => new { x.Id, x.Slug })
+                .FirstOrDefault(x => x.Id == id).Slug;
         }
     }
 }

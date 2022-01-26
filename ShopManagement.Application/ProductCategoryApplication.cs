@@ -11,7 +11,8 @@ namespace ShopManagement.Application
         private readonly IFileUploader _fileUploader;
         private readonly IProductCategoryRepository _productCategoryRepository;
 
-        public ProductCategoryApplication(IProductCategoryRepository productCategoryRepository, IFileUploader fileUploader)
+        public ProductCategoryApplication(IProductCategoryRepository productCategoryRepository,
+            IFileUploader fileUploader)
         {
             _productCategoryRepository = productCategoryRepository; 
             _fileUploader=fileUploader;
@@ -58,7 +59,7 @@ namespace ShopManagement.Application
              productCategory.Edit(command.Name, command.Description, fileName,
                 command.PictureAlt, command.PictureTitle, command.Keywords,
                 command.MetaDescription, slug);
-            _productCategoryRepository.Create(productCategory);
+
             _productCategoryRepository.SaveChanges();
 
             return operation.Succedded();

@@ -13,12 +13,11 @@
             </div>
             <div class="panel-body">
                 <form method="post" enctype="multipart/form-data">
-                                        <div class="row">
+                    <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label asp-for="Command.Title" class="control-label">عنوان</label>
-                                <input type="text" class="form-control" asp-for="Command.Title"
-                                    onchange="makeSlug('Title', 'Slug')">
+                                <label asp-for="Command.Title" class="control-label">نام</label>
+                                <input type="text" class="form-control" asp-for="Command.Title" onchange="makeSlug('Title', 'Slug')">
                                 <span asp-validation-for="Command.Title" class="error"></span>
                             </div>
                         </div>
@@ -45,14 +44,13 @@
                                 <span asp-validation-for="Command.Picture" class="error"></span>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label  asp-for="Command.CategoryId"> گروه مقاله</label>
-                            <select class="form-control" asp-for="Command.CategoryId"
-                                asp-item="Model.ArticleCategories">
-                                <option value="0">انتخاب گروه مقاله</option>
-                            </select>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="Command.CategoryId">گروه مقاله</label>
+                                <select class="form-control" asp-for="Command.CategoryId" asp-items="Model.ArticleCategories">
+                                    <option value="0">گروه مقاله ...</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -74,13 +72,14 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group no-margin">
-                                <label asp-for="Command.ShortDescription" class="control-label"> توضیحات کوتاه</label>
-                                <textarea class="form-control autogrow" asp-for="Command.ShortDescription"
-                                    onchange="fillField('ShortDescription', 'MetaDescription')"
-                                    style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
+                                <label asp-for="Command.ShortDescription" class="control-label">توضیحات کوتاه</label>
+                                <textarea class="form-control autogrow" asp-for="Command.ShortDescription" onchange="fillField('ShortDescription', 'MetaDescription')"
+                                          style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
                                 <span asp-validation-for="Command.ShortDescription" class="error"></span>
                             </div>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-12">
                             <div class="form-group no-margin">
                                 <label asp-for="Command.Description" class="control-label">توضیحات</label>
@@ -103,10 +102,10 @@
                             <div class="form-group no-margin">
                                 <label asp-for="Command.Metadescription" class="control-label">توضیحات متا</label>
                                 <textarea class="form-control autogrow" asp-for="Command.Metadescription"
-                                    style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
+                                          style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
                                 <span asp-validation-for="Command.Metadescription" class="error"></span>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
@@ -117,10 +116,11 @@
                             </div>
                         </div>
                     </div>
-                    <a class="btn btn-Secondary waves-effect" asp-page="./Index">بستن</a>
-                    <button type="submit" class="btn btn-Success waves-effect waves-light">ایجاد</button>
+                    <button type="submit" class="btn btn-success waves-effect waves-light m-b-5">ایجاد</button>
+                    <a asp-page="./Index" class="btn btn-dark waves-effect waves-light m-b-5">بازگشت</a>
                 </form>
             </div>
         </div>
     </div>
 </div>
+

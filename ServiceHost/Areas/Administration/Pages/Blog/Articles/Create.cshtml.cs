@@ -1,5 +1,6 @@
 using BlogManagement.Application.Contracts.Article;
 using BlogManagement.Application.Contracts.ArticleCategory;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -13,8 +14,7 @@ namespace ServiceHost.Areas.Administration.Pages.Blog.Articles
         private readonly IArticleApplication _articleApplication;
         private readonly IArticleCategoryApplication _articleCategoryApplication;
 
-        public CreateModel(IArticleCategoryApplication articleCategoryApplication ,
-            IArticleApplication articleApplication)
+        public CreateModel(IArticleApplication articleApplication, IArticleCategoryApplication articleCategoryApplication)
         {
             _articleApplication = articleApplication;
             _articleCategoryApplication = articleCategoryApplication;
@@ -23,6 +23,12 @@ namespace ServiceHost.Areas.Administration.Pages.Blog.Articles
         public void OnGet()
         {
             ArticleCategories = new SelectList(_articleCategoryApplication.GetArticleCategories(), "Id", "Name");
+        }
+
+        public IActionResult OnPost(CreateArticle command)
+        {
+            var result = _articleApplication.Create(command);
+            return RedirectToPage("./Index");
         }
     }
 }

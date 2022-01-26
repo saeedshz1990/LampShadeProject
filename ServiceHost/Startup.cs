@@ -1,4 +1,5 @@
 using _0_FrameWork.Application;
+using AccountManagement.Configuration;
 using BlogManagement.Infrasutructure.Configuration;
 using CommentManagement.Infrasutructure.Configuration;
 using DiscountManagement.Infrasutructure.Configuration;
@@ -33,10 +34,10 @@ namespace ServiceHost
             InventoryBootstrapper.Configure(services, connectionString);
             BlogManagementBootstrapper.Configure(services, connectionString);
             CommentManagementBootstraper.Configure(services, connectionString);
+            AccountManagementBootstrapper.Configure(services,connectionString);
 
-            services.AddSingleton(HtmlEncoder.
-                Create(UnicodeRanges.BasicLatin, UnicodeRanges.Arabic));
-
+            services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Arabic));
+            services.AddSingleton<IPasswordHasher, PasswordHasher>();
             services.AddTransient<IFileUploader, FileUploader>();
 
             services.Configure<CookiePolicyOptions>(options =>

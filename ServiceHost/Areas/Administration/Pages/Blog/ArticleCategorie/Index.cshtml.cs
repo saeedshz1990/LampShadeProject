@@ -1,6 +1,4 @@
 using System.Collections.Generic;
-using BlogManagement.Application;
-using BlogManagement.Application.Contracts.Article;
 using BlogManagement.Application.Contracts.ArticleCategory;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -10,8 +8,6 @@ namespace ServiceHost.Areas.Administration.Pages.Blog.ArticleCategories
     public class IndexModel : PageModel
     {
         public ArticleCategorySearchModel SearchModel;
-
-        //ProducCategoryViewModel use for Save
         public List<ArticleCategoryViewModel> ArticleCategories;
 
         private readonly IArticleCategoryApplication _articleCategoryApplication;
@@ -21,16 +17,14 @@ namespace ServiceHost.Areas.Administration.Pages.Blog.ArticleCategories
             _articleCategoryApplication = articleCategoryApplication;
         }
 
-        public void OnGet(ArticleSearchModel searchModel)
+        public void OnGet(ArticleCategorySearchModel searchModel)
         {
-            
-            ArticleCategories = _articleCategoryApplication.Search(SearchModel);
+            ArticleCategories = _articleCategoryApplication.Search(searchModel);
         }
-
 
         public IActionResult OnGetCreate()
         {
-            return Partial("./Create",new CreateArticleCategory());
+            return Partial("./Create", new CreateArticleCategory());
         }
 
         public JsonResult OnPostCreate(CreateArticleCategory command)
@@ -47,7 +41,6 @@ namespace ServiceHost.Areas.Administration.Pages.Blog.ArticleCategories
 
         public JsonResult OnPostEdit(EditArticleCategory command)
         {
-  
             var result = _articleCategoryApplication.Edit(command);
             return new JsonResult(result);
         }

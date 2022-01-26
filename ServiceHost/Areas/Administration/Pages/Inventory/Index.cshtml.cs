@@ -10,19 +10,15 @@ namespace ServiceHost.Areas.Administration.Pages.Inventory
     public class IndexModel : PageModel
     {
 
-        [TempData]
-        public string Message { get; set; }
+        [TempData] public string Message { get; set; }
         public InventorySearchModel SearchModel;
-        //ProducCategoryViewModel use for Save
         public List<InventoryViewModel> Inventory;
         public SelectList Products;
 
-
-        private readonly IInventoryApplication _inventoryApplication;
         private readonly IProductApplication _productApplication;
+        private readonly IInventoryApplication _inventoryApplication;
 
-        public IndexModel(IProductApplication productApplication,
-            IInventoryApplication inventoryApplication)
+        public IndexModel(IProductApplication productApplication, IInventoryApplication inventoryApplication)
         {
             _productApplication = productApplication;
             _inventoryApplication = inventoryApplication;
@@ -34,11 +30,10 @@ namespace ServiceHost.Areas.Administration.Pages.Inventory
             Inventory = _inventoryApplication.Search(searchModel);
         }
 
-
+       
         public IActionResult OnGetCreate()
         {
             var command = new CreateInventory
-
             {
                 Products = _productApplication.GetProducts()
             };
@@ -70,10 +65,10 @@ namespace ServiceHost.Areas.Administration.Pages.Inventory
             {
                 InventoryId = id
             };
-            return RedirectToPage("./Increase", command);
+            return Partial("Increase", command);
         }
 
-        public IActionResult OnPostIncrease(IncreaseInventory command)
+        public JsonResult OnPostIncrease(IncreaseInventory command)
         {
             var result = _inventoryApplication.Increase(command);
             return new JsonResult(result);
@@ -81,14 +76,14 @@ namespace ServiceHost.Areas.Administration.Pages.Inventory
 
         public IActionResult OnGetReduce(long id)
         {
-            var command = new IncreaseInventory()
+            var command = new ReduceInventory()
             {
                 InventoryId = id
             };
-            return RedirectToPage("./Reduce", command);
+            return Partial("Reduce", command);
         }
 
-        public IActionResult OnPostReduce(ReduceInventory command)
+        public JsonResult OnPostReduce(ReduceInventory command)
         {
             var result = _inventoryApplication.Reduce(command);
             return new JsonResult(result);
@@ -97,8 +92,7 @@ namespace ServiceHost.Areas.Administration.Pages.Inventory
         public IActionResult OnGetLog(long id)
         {
             var log = _inventoryApplication.GetOperationLog(id);
-
-            return Partial("./OperationLog", log);
+            return Partial("OperationLog", log);
         }
     }
 }

@@ -35,7 +35,8 @@ namespace BlogManagement.Application
             var publishDate=command.PublishDate.ToGeorgianDateTime();
             var article = new Article(command.Title, command.ShortDescription, command.Description,
                 pictureName,command.PictureAlt, command.PictureTitle, publishDate, slug,
-                command.KeyWords, command.Metadescription,command.CanonicalAddress, command.CategoryId);
+                command.KeyWords, command.Metadescription,command.CanonicalAddress,
+                command.CategoryId);
 
             _articleRepository.Create(article);
             _articleRepository.SaveChanges();

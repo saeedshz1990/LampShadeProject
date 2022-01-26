@@ -9,7 +9,7 @@
     <div class="col-sm-12">
         <h4 class="page-title pull-right">@ViewData["title"]</h4>
         <p class="pull-left">
-            <a class="btn btn-success btn-lg" asp-Page="./Create">ایجاد مقاله جدید</a>
+            <a class="btn btn-success btn-lg" asp-page="./Create">ایجاد مقاله جدید</a>
         </p>
     </div>
 </div>
@@ -28,9 +28,8 @@
                     </div>
                     <div class="form-group">
                         <label class="sr-only" asp-for="SearchModel.CategoryId"></label>
-                        <select class="form-control" asp-for="SearchModel.CategoryId"
-                            asp-item="Model.ArticleCategories">
-                            <option value="0">انتخاب گروه مقاله</option>
+                        <select class="form-control" asp-for="SearchModel.CategoryId" asp-items="Model.ArticleCategories">
+                            <option value="0">گروه مقاله ...</option>
                         </select>
                     </div>
                     <button type="submit" class="btn btn-success waves-effect waves-light m-l-10">جستجو</button>
@@ -45,7 +44,7 @@
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">لیست مقالات </h3>
+                <h3 class="panel-title">لیست مقالات</h3>
             </div>
             <div class="panel-body">
                 <div class="row">
@@ -56,7 +55,7 @@
                                     <th>#</th>
                                     <th>عکس</th>
                                     <th>عنوان</th>
-                                    <th>گروه مقاله</th>
+                                    <th>گروه</th>
                                     <th>توضیحات کوتاه</th>
                                     <th>تاریخ انتشار</th>
                                     <th>عملیات</th>
@@ -75,7 +74,7 @@
                                         <td>@item.ShortDescription</td>
                                         <td>@item.PublisDate</td>
                                         <td>
-                                            <a class="btn btn-warning pull-right m-rl-5"asp-page="./Edit" asp-route-id="@item.Id">
+                                            <a class="btn btn-warning pull-right m-rl-5" asp-page="./Edit" asp-route-id="@item.Id">
                                                 <i class="fa fa-edit"></i> ویرایش
                                             </a>
                                         </td>
@@ -91,12 +90,12 @@
 </div>
 
 @section Scripts {
-<script src="~/AdminTheme/assets/datatables/jquery.dataTables.min.js"></script>
-<script src="~/AdminTheme/assets/datatables/dataTables.bootstrap.js"></script>
+    <script src="~/adminTheme/assets/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/adminTheme/assets/datatables/dataTables.bootstrap.js"></script>
 
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('#datatable').dataTable();
-    });
-</script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#datatable').dataTable();
+        });
+    </script>
 }

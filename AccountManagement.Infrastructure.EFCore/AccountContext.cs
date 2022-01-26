@@ -8,7 +8,7 @@ namespace AccountManagement.Infrastructure.EFCore
     {
         public DbSet<Account> Account { get; set; }
 
-        public AccountContext(DbContextOptions<AccountContext> options)
+        public AccountContext(DbContextOptions<AccountContext> options) : base(options)
         {
            
 
