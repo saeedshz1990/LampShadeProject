@@ -11,5 +11,10 @@ namespace _0_FrameWork.Application
         void SignOut();
         bool IsAuthenticated();
         void Signin(AuthViewModel account);
+        string CurrentAccountRole();
+        AuthViewModel CurrentAccountInfo();
+        List<int> GetPermissions();
+        long CurrentAccountId();
+        string CurrentAccountMobile();
     }
 }

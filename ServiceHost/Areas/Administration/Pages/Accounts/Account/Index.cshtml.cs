@@ -10,44 +10,38 @@ namespace ServiceHost.Areas.Administration.Pages.Accounts.Account
 {
     public class IndexModel : PageModel
     {
-
         [TempData]
         public string Message { get; set; }
-
-        public AccountSearchodel SearchModel;
-        public SelectList Roles;
-        //ProducCategoryViewModel use for Save
+        public AccountSearchModel SearchModel;
         public List<AccountViewModel> Accounts;
+        public SelectList Roles;
 
-
-        private readonly IAccountApplication _accountApplication;
         private readonly IRoleApplication _roleApplication;
+        private readonly IAccountApplication _accountApplication;
 
         public IndexModel(IAccountApplication accountApplication, IRoleApplication roleApplication)
         {
-            _accountApplication = accountApplication;
             _roleApplication = roleApplication;
+            _accountApplication = accountApplication;
         }
-
-        public void OnGet(AccountSearchodel searchModel)
+        public void OnGet(AccountSearchModel searchModel)
         {
-            Roles = new SelectList(_roleApplication.List(),"Id","Name");
+            Roles = new SelectList(_roleApplication.List(), "Id", "Name");
             Accounts = _accountApplication.Search(searchModel);
         }
 
-
         public IActionResult OnGetCreate()
         {
-            var command = new CreateAccount
+            var command = new RegisterAccount
             {
-                Roles=_roleApplication.List()
+                Roles = _roleApplication.List()
             };
             return Partial("./Create", command);
         }
 
-        public JsonResult OnPostCreate(CreateAccount command)
+        public JsonResult OnPostCreate(RegisterAccount command)
         {
-            var result = _accountApplication.Create(command);
+            var result = _accountApplication.Register(command);
             return new JsonResult(result);
         }
 
@@ -66,7 +60,7 @@ namespace ServiceHost.Areas.Administration.Pages.Accounts.Account
 
         public IActionResult OnGetChangePassword(long id)
         {
-            var command = new ChangePassword { Id=id};
+            var command = new ChangePassword { Id = id };
             return Partial("ChangePassword", command);
         }
 

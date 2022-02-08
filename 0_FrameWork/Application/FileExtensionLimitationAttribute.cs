@@ -24,9 +24,6 @@ namespace _0_FrameWork.Application
            if(!_validExtension.Contains(fileExtension))
                 return false;
             return true;
-
-
-
         }
 
         public void AddValidation(ClientModelValidationContext context)

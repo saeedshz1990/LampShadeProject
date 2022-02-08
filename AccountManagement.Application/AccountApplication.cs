@@ -23,33 +23,42 @@ namespace AccountManagement.Application
 
         public OperationResult ChangePassword(ChangePassword command)
         {
-            var operation=new OperationResult();
-            var account=_accountRepository.Get(command.Id);
-            if(account==null)
+            var operation = new OperationResult();
+            var account = _accountRepository.Get(command.Id);
+            if (account == null)
                 return operation.Failed(ApplicationMessages.RecordNotFound);
 
             if (command.Password != command.RePassword)
                 return operation.Failed(ApplicationMessages.PasswordNotMatch);
 
-            var password=_passwordHasher.Hash(command.Password);
+            var password = _passwordHasher.Hash(command.Password);
             account.ChangePassword(password);
             _accountRepository.SaveChanges();
-
             return operation.Succedded();
         }
 
-        public OperationResult Create(CreateAccount command)
+        public AccountViewModel GetAccountBy(long id)
+        {
+            var account = _accountRepository.Get(id);
+            return new AccountViewModel()
+            {
+                Fullname = account.Fullname,
+                Mobile = account.Mobile
+            };
+        }
+
+        public OperationResult Register(RegisterAccount command)
         {
             var operation = new OperationResult();
 
-            if(_accountRepository.Exists(x=>x.Username==command.Username|| x.Mobile==command.Mobile))
-                operation.Failed(ApplicationMessages.DuplicatedRecord);
+            if (_accountRepository.Exists(x => x.Username == command.Username || x.Mobile == command.Mobile))
+                return operation.Failed(ApplicationMessages.DuplicatedRecord);
 
-            var path = $"ProfilePhotos";
-            var picturePath = _fileUploader.Upload(command.ProfilePhoto, path);
             var password = _passwordHasher.Hash(command.Password);
-            var account = new Account(command.Fullname,command.Username, password,
-                command.Mobile,command.RoleId, picturePath);
+            var path = $"profilePhotos";
+            var picturePath = _fileUploader.Upload(command.ProfilePhoto, path);
+            var account = new Account(command.Fullname, command.Username, password, command.Mobile, command.RoleId,
+                picturePath);
             _accountRepository.Create(account);
             _accountRepository.SaveChanges();
             return operation.Succedded();
@@ -62,15 +71,14 @@ namespace AccountManagement.Application
             if (account == null)
                 return operation.Failed(ApplicationMessages.RecordNotFound);
 
-            if (_accountRepository.Exists(x => (x.Username == command.Username || x.Mobile == command.Mobile )&& x.Id !=command.Id))
-                operation.Failed(ApplicationMessages.DuplicatedRecord);
+            if (_accountRepository.Exists(x =>
+                    (x.Username == command.Username || x.Mobile == command.Mobile) && x.Id != command.Id))
+                return operation.Failed(ApplicationMessages.DuplicatedRecord);
 
-            var path = $"ProfilePhotos";
+            var path = $"profilePhotos";
             var picturePath = _fileUploader.Upload(command.ProfilePhoto, path);
-            account.Edit(command.Fullname, command.Username,
-                command.Mobile, command.RoleId, picturePath);
+            account.Edit(command.Fullname, command.Username, command.Mobile, command.RoleId, picturePath);
             _accountRepository.SaveChanges();
-
             return operation.Succedded();
         }
 
@@ -86,27 +94,34 @@ namespace AccountManagement.Application
             if (account == null)
                 return operation.Failed(ApplicationMessages.WrongUserPass);
 
-            (bool Verified, bool NeedsUpgrade) result = _passwordHasher.Check(account.Password,command.Password);
-            if(!result.Verified)
+            var result = _passwordHasher.Check(account.Password, command.Password);
+            if (!result.Verified)
                 return operation.Failed(ApplicationMessages.WrongUserPass);
 
-            var authViewModel = new AuthViewModel(account.Id,
-                account.RoleId,
-                account.Fullname,
-                account.Username);
+            var permissions = _roleRepository.Get(account.RoleId)
+                .Permissions
+                .Select(x => x.Code)
+                .ToList();
+
+            var authViewModel = new AuthViewModel(account.Id, account.RoleId, account.Fullname
+                , account.Username, account.Mobile, permissions);
+
             _authHelper.Signin(authViewModel);
             return operation.Succedded();
-
         }
 
         public void Logout()
         {
             _authHelper.SignOut();
         }
-
-        public List<AccountViewModel> Search(AccountSearchodel searchodel)
+        public List<AccountViewModel> GetAccounts()
         {
-            return _accountRepository.Search(searchodel);
+            return _accountRepository.GetAccounts();
+        }
+
+        public List<AccountViewModel> Search(AccountSearchModel searchModel)
+        {
+            return _accountRepository.Search(searchModel);
         }
     }
 }

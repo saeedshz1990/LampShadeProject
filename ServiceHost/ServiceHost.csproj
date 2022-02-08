@@ -22,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AccountManagement.Application.Contracts\AccountManagement.Application.Contracts.csproj" />
     <ProjectReference Include="..\AccountManagement.Configuration\AccountManagement.Configuration.csproj" />
     <ProjectReference Include="..\BlogManagement.Infrasutructure.Configuration\BlogManagement.Infrasutructure.Configuration.csproj" />
     <ProjectReference Include="..\CommentManagement.Infrasutructure.Configuration\CommentManagement.Infrasutructure.Configuration.csproj" />

@@ -8,7 +8,6 @@ namespace BlogManagement.Application.Contracts.ArticleCategory
         public string Description { get; set; }
         public int ShowOrder { get; set; }
         public string CreationDate { get; set; }
-
         public long ArticleCount { get; set; }
 
 

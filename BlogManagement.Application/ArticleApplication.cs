@@ -33,6 +33,7 @@ namespace BlogManagement.Application
 
             var pictureName = _fileUploader.Upload(command.Picture, path);
             var publishDate=command.PublishDate.ToGeorgianDateTime();
+
             var article = new Article(command.Title, command.ShortDescription, command.Description,
                 pictureName,command.PictureAlt, command.PictureTitle, publishDate, slug,
                 command.KeyWords, command.Metadescription,command.CanonicalAddress,

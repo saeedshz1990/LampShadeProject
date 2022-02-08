@@ -1,6 +1,6 @@
 ﻿namespace AccountManagement.Application.Contracts.Account
 {
-    public class AccountSearchodel
+    public class AccountSearchModel
     {
         public string Fullname { get; set; }
         public string Username { get; set; }

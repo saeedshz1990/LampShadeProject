@@ -1,4 +1,5 @@
 using _0_FrameWork.Application;
+using _0_FrameWork.Infrasutructure;
 using AccountManagement.Configuration;
 using BlogManagement.Infrasutructure.Configuration;
 using CommentManagement.Infrasutructure.Configuration;
@@ -15,6 +16,9 @@ using ShopManagement.Infrasutructure.Configuration;
 using System.Collections.Generic;
 using System.Text.Encodings.Web;
 using System.Text.Unicode;
+using _0_FrameWork.Application.Email;
+using _0_FrameWork.Application.Sms;
+using _0_FrameWork.Application.ZarinPal;
 
 namespace ServiceHost
 {
@@ -43,6 +47,9 @@ namespace ServiceHost
             services.AddSingleton<IPasswordHasher, PasswordHasher>();
             services.AddTransient<IFileUploader, FileUploader>();
             services.AddTransient<IAuthHelper, AuthHelper>();
+            services.AddTransient<IZarinPalFactory, ZarinPalFactory>();
+            services.AddTransient<ISmsService, SmsService>();
+            services.AddTransient<IEmailService, EmailService>();
 
             services.Configure<CookiePolicyOptions>(options =>
             {

@@ -15,11 +15,6 @@ namespace CommentManagement.Infrasutructure.EFCore.Mapping
             builder.Property(x => x.Email).HasMaxLength(500);
             builder.Property(x => x.Website).HasMaxLength(500);
             builder.Property(x => x.Message).HasMaxLength(1000);
-
-            // builder.HasMany(x=>x.Children)
-            // .WithOne(x=>x.Parent)
-            // .HasForeignKey(x=>x.ParentId)
-            // .OnDelete(DeleteBehavior.noAction);
         }
     }
 }

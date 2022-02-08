@@ -36,34 +36,42 @@ namespace AccountManagement.Infrastructure.EFCore.Repository
             }).FirstOrDefault(x=>x.Id==id);
         }
 
-        public List<AccountViewModel> Search(AccountSearchodel searchodel)
+        public List<AccountViewModel> GetAccounts()
         {
-            var query= _context.Account
-                .Include(x=>x.Role)
-                .Select(x => new AccountViewModel {
+            return _context.Account.Select(x => new AccountViewModel
+            {
+                Id = x.Id,
+                Fullname = x.Fullname
+            }).ToList();
+        }
+
+        public List<AccountViewModel> Search(AccountSearchModel searchModel)
+        {
+            var query = _context.Account.Include(x => x.Role).Select(x => new AccountViewModel
+            {
                 Id = x.Id,
                 Fullname = x.Fullname,
                 Mobile = x.Mobile,
+                ProfilePhoto = x.ProfilePhoto,
+                Role = x.Role.Name,
+                RoleId = x.RoleId,
                 Username = x.Username,
-                ProfilePhoto=x.ProfilePhoto,
-                RoleId=x.RoleId,
-                Role=x.Role.Name,
-                CreationDate=x.CreationDate.ToFarsi()
+                CreationDate = x.CreationDate.ToFarsi()
             });
 
-            if (!string.IsNullOrWhiteSpace(searchodel.Fullname))
-                query = query.Where(x => x.Fullname.Contains(searchodel.Fullname));
+            if (!string.IsNullOrWhiteSpace(searchModel.Fullname))
+                query = query.Where(x => x.Fullname.Contains(searchModel.Fullname));
 
-            if (!string.IsNullOrWhiteSpace(searchodel.Username))
-                query = query.Where(x => x.Username.Contains(searchodel.Username));
+            if (!string.IsNullOrWhiteSpace(searchModel.Username))
+                query = query.Where(x => x.Username.Contains(searchModel.Username));
 
-            if (!string.IsNullOrWhiteSpace(searchodel.Mobile))
-                query = query.Where(x => x.Mobile.Contains(searchodel.Mobile));
+            if (!string.IsNullOrWhiteSpace(searchModel.Mobile))
+                query = query.Where(x => x.Mobile.Contains(searchModel.Mobile));
 
-            if (searchodel.RoleId>0)
-                query=query.Where(x=> x.RoleId==searchodel.RoleId);
+            if (searchModel.RoleId > 0)
+                query = query.Where(x => x.RoleId == searchModel.RoleId);
 
-                return query.OrderByDescending(x=>x.Id).ToList();
+            return query.OrderByDescending(x => x.Id).ToList();
         }
     }
 }

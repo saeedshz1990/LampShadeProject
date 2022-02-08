@@ -5,13 +5,16 @@ using _01_LampShadeQuery.Query;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using ShopManagement.Application;
+using ShopManagement.Application.Contracts.Order;
 using ShopManagement.Application.Contracts.Product;
 using ShopManagement.Application.Contracts.ProductCategory;
 using ShopManagement.Application.Contracts.ProductPicture;
 using ShopManagement.Application.Contracts.Slide;
+using ShopManagement.Domain.OrderAgg;
 using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Domain.ProductCategoryAgg;
 using ShopManagement.Domain.ProductPictureAgg;
+using ShopManagement.Domain.Services;
 using ShopManagement.Domain.SlideAgg;
 using ShopManagement.Infrasutructure.EFCore;
 using ShopManagement.Infrasutructure.EFCore.Repository;
@@ -22,23 +25,32 @@ namespace ShopManagement.Infrasutructure.Configuration
     {
         public static void Configure(IServiceCollection services, string connectionString)
         {
-            //PRoductCategory
             services.AddTransient<IProductCategoryApplication, ProductCategoryApplication>();
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
-            //Product
+
             services.AddTransient<IProductApplication, ProductApplication>();
             services.AddTransient<IProductRepository, ProductRepository>();
-            //ProductPicture
+
             services.AddTransient<IProductPictureApplication, ProductPictureApplication>();
             services.AddTransient<IProductPictureRepository, ProductPictureRepository>();
-            //Slide
-            services.AddTransient<ISlideRepository, SlideRepository>();
+
             services.AddTransient<ISlideApplication, SlideApplication>();
-            //Query
+            services.AddTransient<ISlideRepository, SlideRepository>();
+
+            services.AddTransient<IOrderRepository, OrderRepository>();
+            services.AddTransient<IOrderApplication, OrderApplication>();
+
+            services.AddSingleton<ICartService, CartService>();
+
+            services.AddTransient<IShopInventoryAcl, ShopInventoryAcl>();
+            services.AddTransient<IShopAccountAcl, ShopAccountAcl>();
+
             services.AddTransient<ISlideQuery, SlideQuery>();
             services.AddTransient<IProductCategoryQuery, ProductCategoryQuery>();
-
             services.AddTransient<IProductQuery, ProductQuery>();
+            services.AddTransient<ICartCalculatorService, CartCalculatorService>();
+
+            services.AddTransient<IPermissionExposer, ShopPermissionExposer>();
 
 
             services.AddDbContext<ShopContext>(x => x.UseSqlServer(connectionString));

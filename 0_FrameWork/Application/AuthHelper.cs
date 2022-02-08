@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
-using _0_Framework.Infrastructure;
+using _0_FrameWork.Infrasutructure;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
@@ -27,9 +27,9 @@ namespace _0_FrameWork.Application
 
             var claims = _contextAccessor.HttpContext.User.Claims.ToList();
             result.Id = long.Parse(claims.FirstOrDefault(x => x.Type == "AccountId").Value);
-            result.Username = claims.FirstOrDefault(x => x.Type == "Username").Value;
+            result.UserName = claims.FirstOrDefault(x => x.Type == "Username").Value;
             result.RoleId = long.Parse(claims.FirstOrDefault(x => x.Type == ClaimTypes.Role).Value);
-            result.Fullname = claims.FirstOrDefault(x => x.Type == ClaimTypes.Name).Value;
+            result.FullName = claims.FirstOrDefault(x => x.Type == ClaimTypes.Name).Value;
             result.Role = Roles.GetRoleBy(result.RoleId);
             return result;
         }
@@ -81,9 +81,9 @@ namespace _0_FrameWork.Application
             var claims = new List<Claim>
             {
                 new Claim("AccountId", account.Id.ToString()),
-                new Claim(ClaimTypes.Name, account.Fullname),
+                new Claim(ClaimTypes.Name, account.FullName),
                 new Claim(ClaimTypes.Role, account.RoleId.ToString()),
-                new Claim("Username", account.Username), // Or Use ClaimTypes.NameIdentifier
+                new Claim("Username", account.UserName), // Or Use ClaimTypes.NameIdentifier
                 new Claim("permissions", permissions),
                 new Claim("Mobile", account.Mobile)
             };
