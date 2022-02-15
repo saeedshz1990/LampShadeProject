@@ -54,7 +54,7 @@ namespace DiscountManagement.Application
             return _customerDiscountRepository.GetDatails(id);
         }
 
-        public List<CustomerDiscountViewModel> Search(ColleagueDiscountSearchModel searchModel)
+        public List<CustomerDiscountViewModel> Search(CustomerDiscountSearchModel searchModel)
         {
             return _customerDiscountRepository.Search(searchModel);
         }

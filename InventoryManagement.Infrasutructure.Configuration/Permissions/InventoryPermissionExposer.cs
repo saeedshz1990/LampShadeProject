@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using _0_FrameWork.Infrasutructure;
 
 namespace InventoryManagement.Infrasutructure.Configuration.Permissions
 {

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using _0_FrameWork.Domain;
 
 namespace ShopManagement.Domain.OrderAgg
@@ -20,7 +16,8 @@ namespace ShopManagement.Domain.OrderAgg
         public long RefId { get; private set; }
         public List<OrderItem> Items { get; private set; }
 
-        public Order(long accountId, int paymentMethod, double totalAmount, double discountAmount, double payAmount)
+        public Order(long accountId, int paymentMethod, double totalAmount, double discountAmount,
+            double payAmount)
         {
             AccountId = accountId;
             TotalAmount = totalAmount;

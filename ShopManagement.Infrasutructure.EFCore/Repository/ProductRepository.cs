@@ -47,7 +47,7 @@ namespace ShopManagement.Infrasutructure.EFCore.Repository
 
         }
 
-        public EditProduct GetDeatails(long id)
+        public EditProduct GetDetails(long id)
         {
             return _context.Products.Select(x => new EditProduct
             {

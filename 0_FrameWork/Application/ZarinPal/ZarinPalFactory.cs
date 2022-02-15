@@ -1,7 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
-using Newtonsoft.Json;
 using RestSharp;
-
+using RestSharp.Serialization.Json;
 namespace _0_FrameWork.Application.ZarinPal
 {
     public class ZarinPalFactory : IZarinPalFactory
@@ -15,7 +14,8 @@ namespace _0_FrameWork.Application.ZarinPal
             Prefix = _configuration.GetSection("payment")["method"];
             MerchantId = _configuration.GetSection("payment")["merchant"];
         }
-        public PaymentResponse CreatePaymentRequest(string amount, string mobile, string email, string description, long orderId)
+        public PaymentResponse CreatePaymentRequest(string amount, string mobile,
+            string email, string description, long orderId)
         {
             amount = amount.Replace(",", "");
             var finalAmount = int.Parse(amount);
@@ -37,9 +37,10 @@ namespace _0_FrameWork.Application.ZarinPal
             var response = client.Execute(request);
             var jsonSerializer = new JsonSerializer();
             return jsonSerializer.Deserialize<PaymentResponse>(response);
+
         }
 
-        public VerificationResponse CreateVerificationRequest(string authority, string price)
+        public VerificationResponse CreateVerificationRequest(string authority, string amount)
         {
             var client = new RestClient($"https://{Prefix}.zarinpal.com/pg/rest/WebGate/PaymentVerification.json");
             var request = new RestRequest(Method.POST);
@@ -57,6 +58,7 @@ namespace _0_FrameWork.Application.ZarinPal
             var response = client.Execute(request);
             var jsonSerializer = new JsonSerializer();
             return jsonSerializer.Deserialize<VerificationResponse>(response);
+
         }
     }
 }

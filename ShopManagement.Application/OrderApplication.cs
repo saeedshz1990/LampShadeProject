@@ -1,6 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using _0_FrameWork.Application;
+using _0_FrameWork.Application.Sms;
 using Microsoft.Extensions.Configuration;
+using ShopManagement.Application.Contracts.Order;
+using ShopManagement.Domain.OrderAgg;
+using ShopManagement.Domain.Services;
 
 namespace ShopManagement.Application
 {
@@ -57,7 +62,8 @@ namespace ShopManagement.Application
         {
             var order = _orderRepository.Get(orderId);
             order.PaymentSucceeded(refId);
-            var symbol = _configuration.GetValue<string>("Symbol");
+            //var symbol = _configuration.GetValue<string>("Symbol");
+            var symbol=_configuration.GetValue<string>("Symbol");
             var issueTrackingNo = CodeGenerator.Generate(symbol);
             order.SetIssueTrackingNo(issueTrackingNo);
             if (!_shopInventoryAcl.ReduceFromInventory(order.Items)) return "";

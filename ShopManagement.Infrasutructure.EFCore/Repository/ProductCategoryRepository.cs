@@ -51,8 +51,8 @@ namespace ShopManagement.Infrasutructure.EFCore.Repository
                 CreationDate = x.CreationDate.ToFarsi()
             });
 
-            if (!string.IsNullOrWhiteSpace(searchModel.Title))
-                query = query.Where(x => x.Name.Contains(searchModel.Title));
+            if (!string.IsNullOrWhiteSpace(searchModel.Name))
+                query = query.Where(x => x.Name.Contains(searchModel.Name));
 
             return query.OrderByDescending(x => x.Id).ToList();
 

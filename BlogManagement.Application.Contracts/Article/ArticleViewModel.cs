@@ -1,8 +1,5 @@
-using System;
-
 namespace BlogManagement.Application.Contracts.Article
 {
-
     public class ArticleViewModel
     {
         public long Id { get; set; }

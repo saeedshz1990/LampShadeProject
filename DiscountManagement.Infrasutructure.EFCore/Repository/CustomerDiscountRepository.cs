@@ -13,9 +13,9 @@ namespace DiscountManagement.Infrasutructure.EFCore.Repository
         private readonly DiscountContext _Context;
         private readonly ShopContext _shopContext;
 
-        public CustomerDiscountRepository(DiscountContext Context, ShopContext shopContext) : base(Context)
+        public CustomerDiscountRepository(DiscountContext context, ShopContext shopContext) : base(context)
         {
-            _Context = Context;
+            _Context = context;
             _shopContext = shopContext;
         }
 
@@ -32,7 +32,7 @@ namespace DiscountManagement.Infrasutructure.EFCore.Repository
             }).FirstOrDefault(x => x.Id == id);
         }
 
-        public List<CustomerDiscountViewModel> Search(ColleagueDiscountSearchModel searchModel)
+        public List<CustomerDiscountViewModel> Search(CustomerDiscountSearchModel searchModel)
         {
             var products = _shopContext.Products.Select(x => new { x.Id, x.Name }).ToList();
             var query = _Context.CustomerDisounts.Select(x => new CustomerDiscountViewModel

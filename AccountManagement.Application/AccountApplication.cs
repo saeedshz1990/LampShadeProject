@@ -2,23 +2,28 @@
 using AccountManagement.Application.Contracts.Account;
 using AccountManagement.Domain.AccountAgg;
 using System.Collections.Generic;
+using System.Linq;
+using AccountManagement.Domain.RoleAgg;
 
 namespace AccountManagement.Application
 {
     public class AccountApplication : IAccountApplication
     {
+        private readonly IRoleRepository _roleRepository;
         private readonly IAccountRepository _accountRepository;
         private readonly IPasswordHasher _passwordHasher;
         private readonly IFileUploader _fileUploader;
         private readonly IAuthHelper _authHelper;
 
         public AccountApplication(IAccountRepository accountRepository,
-            IPasswordHasher passwordHasher, IFileUploader fileUploader, IAuthHelper authHelper)
+            IPasswordHasher passwordHasher, IFileUploader fileUploader,
+            IAuthHelper authHelper, IRoleRepository roleRepository)
         {
             _accountRepository = accountRepository;
             _passwordHasher = passwordHasher;
             _fileUploader = fileUploader;
             _authHelper = authHelper;
+            _roleRepository = roleRepository;
         }
 
         public OperationResult ChangePassword(ChangePassword command)

@@ -19,6 +19,8 @@ using System.Text.Unicode;
 using _0_FrameWork.Application.Email;
 using _0_FrameWork.Application.Sms;
 using _0_FrameWork.Application.ZarinPal;
+using ShopManagement.Presentation.Api;
+using InventoryManagement.Presentation.Api;
 
 namespace ServiceHost
 {
@@ -98,15 +100,16 @@ namespace ServiceHost
                 .AddApplicationPart(typeof(ProductController).Assembly)
                 .AddApplicationPart(typeof(InventoryController).Assembly)
                 .AddNewtonsoftJson();
-            services.Configure<CookiePolicyOptions>(options =>
-            {
-                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-                options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.None;
-            });
+
+            //services.Configure<CookiePolicyOptions>(options =>
+            //{
+            //    // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+            //    options.CheckConsentNeeded = context => true;
+            //    options.MinimumSameSitePolicy = SameSiteMode.None;
+            //});
 
 
-            services.AddRazorPages();
+            //services.AddRazorPages();
 
         }
 
@@ -136,7 +139,7 @@ namespace ServiceHost
 
             app.UseAuthorization();
 
-            //app.UseCors("MyPolicy");
+            app.UseCors("MyPolicy");
 
             app.UseEndpoints(endpoints =>
             {

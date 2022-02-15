@@ -1,16 +1,15 @@
 ﻿using _0_FrameWork.Application;
 using AccountManagement.Application.Contracts.Role;
 using AccountManagement.Domain.RoleAgg;
-using AccountManagement.Infrastructure.EFCore.Repository;
 using System.Collections.Generic;
 
 namespace AccountManagement.Application
 {
     public class RoleApplication : IRoleApplication
     {
-        private readonly RoleRepository _roleRepository;
+        private readonly IRoleRepository _roleRepository;
 
-        public RoleApplication(RoleRepository roleRepository)
+        public RoleApplication (IRoleRepository roleRepository)
         {
             _roleRepository = roleRepository;
         }

@@ -1,6 +1,8 @@
-﻿namespace _0_FrameWork.Infrasutructure
+﻿using System;
+
+namespace _0_FrameWork.Infrasutructure
 {
-    public class NeedsPermissionAttribute
+    public class NeedsPermissionAttribute : Attribute
     {
         public int Permission { get; set; }
 

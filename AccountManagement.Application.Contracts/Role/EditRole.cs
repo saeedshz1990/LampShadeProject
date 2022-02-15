@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using _0_FrameWork.Infrasutructure;
 
 namespace AccountManagement.Application.Contracts.Role
 {

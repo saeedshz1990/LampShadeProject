@@ -5,7 +5,6 @@ using _0_FrameWork.Application;
 
 namespace ShopManagement.Application
 {
-
     public class ProductCategoryApplication : IProductCategoryApplication
     {
         private readonly IFileUploader _fileUploader;
@@ -18,14 +17,12 @@ namespace ShopManagement.Application
             _fileUploader=fileUploader;
         }
 
-
-        public OperationResult Create(CreateArticleCategory command)
+        public OperationResult Create(CreateProductCategory command)
         {
             var operation = new OperationResult();
             if (_productCategoryRepository.Exists((x=>x.Name==command.Name)))
                 return operation.Failed(ApplicationMessages.DuplicatedRecord);
             
-
             //for remove spaces and other charecter
             var slug = command.Slug.Slugify();
 

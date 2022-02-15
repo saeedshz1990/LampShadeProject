@@ -1,4 +1,4 @@
-﻿    using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using InventoryManagement.Domain.InventoryAgg;
 using _0_FrameWork.Application;
 using InventoryManagement.Application.Contracts.Inventory;

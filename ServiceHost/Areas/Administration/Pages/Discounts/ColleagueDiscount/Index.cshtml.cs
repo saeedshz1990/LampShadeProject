@@ -8,13 +8,12 @@ using ShopManagement.Application.Contracts.Product;
 
 namespace ServiceHost.Areas.Administration.Pages.Discounts.ColleagueDiscount
 {
+    //[Authorize(Roles = Roles.Administator)]
     public class IndexModel : PageModel
     {
 
         [TempData]
         public string Message { get; set; }
-
-
         public ColleagueDiscountSearchModel SearchModel;
         public SelectList Products;
         //ProducCategoryViewModel use for Save

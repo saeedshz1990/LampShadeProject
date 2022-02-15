@@ -3,10 +3,8 @@ using _0_FrameWork.Infrasutructure;
 using AccountManagement.Application.Contracts.Account;
 using AccountManagement.Domain.AccountAgg;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 
 namespace AccountManagement.Infrastructure.EFCore.Repository
 {
@@ -21,12 +19,14 @@ namespace AccountManagement.Infrastructure.EFCore.Repository
 
         public Account GetBy(string userName)
         {
-            return _context.Account.FirstOrDefault(x => x.Username == userName);
+            return _context.Account
+                .FirstOrDefault(x => x.Username == userName);
         }
 
         public EditAccount GetDetails(long id)
         {
-            return _context.Account.Select(x => new EditAccount
+            return _context.Account
+                .Select(x => new EditAccount
             {
                 Id = id,
                 Fullname = x.Fullname,
@@ -38,7 +38,8 @@ namespace AccountManagement.Infrastructure.EFCore.Repository
 
         public List<AccountViewModel> GetAccounts()
         {
-            return _context.Account.Select(x => new AccountViewModel
+            return _context.Account
+                .Select(x => new AccountViewModel
             {
                 Id = x.Id,
                 Fullname = x.Fullname
@@ -47,7 +48,9 @@ namespace AccountManagement.Infrastructure.EFCore.Repository
 
         public List<AccountViewModel> Search(AccountSearchModel searchModel)
         {
-            var query = _context.Account.Include(x => x.Role).Select(x => new AccountViewModel
+            var query = _context.Account
+                .Include(x => x.Role)
+                .Select(x => new AccountViewModel
             {
                 Id = x.Id,
                 Fullname = x.Fullname,

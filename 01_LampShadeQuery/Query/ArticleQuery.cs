@@ -74,7 +74,7 @@ namespace _01_LampShadeQuery.Query
              return article;
         }
 
-        public List<ArticleQueryModel> LatestArtticles()
+        public List<ArticleQueryModel> LatestArticles()
         {
             return _context.Articles
             .Include(x => x.Category)

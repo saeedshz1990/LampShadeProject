@@ -32,11 +32,11 @@ namespace BlogManagement.Application
             var path = $"{categorySlug}/{slug}";
 
             var pictureName = _fileUploader.Upload(command.Picture, path);
-            var publishDate=command.PublishDate.ToGeorgianDateTime();
+            var publishDate = command.PublishDate.ToGeorgianDateTime();
 
             var article = new Article(command.Title, command.ShortDescription, command.Description,
-                pictureName,command.PictureAlt, command.PictureTitle, publishDate, slug,
-                command.KeyWords, command.Metadescription,command.CanonicalAddress,
+                pictureName, command.PictureAlt, command.PictureTitle, publishDate, slug,
+                command.KeyWords, command.Metadescription, command.CanonicalAddress,
                 command.CategoryId);
 
             _articleRepository.Create(article);
@@ -51,19 +51,17 @@ namespace BlogManagement.Application
             if (article == null)
                 return operation.Failed(ApplicationMessages.RecordNotFound);
 
-
             if (_articleRepository.Exists(x => x.Title == command.Title && x.Id != command.Id))
                 return operation.Failed(ApplicationMessages.DuplicatedRecord);
 
             var slug = command.Slug.Slugify();
-            // var categorySlug = _articleCategoryRepository.GetSlugBy(command.categoryId);
             var path = $"{article.Category.Slug}/{slug}";
-            var publishDate=command.PublishDate.ToGeorgianDateTime();
+            var publishDate = command.PublishDate.ToGeorgianDateTime();
 
             var pictureName = _fileUploader.Upload(command.Picture, path);
             article.Edit(command.Title, command.ShortDescription, command.Description, pictureName,
-        command.PictureAlt, command.PictureTitle, publishDate, slug, command.KeyWords, command.Metadescription,
-        command.CanonicalAddress, command.CategoryId);
+                    command.PictureAlt, command.PictureTitle, publishDate, slug, command.KeyWords,
+                    command.Metadescription,command.CanonicalAddress, command.CategoryId);
 
             _articleRepository.SaveChanges();
             return operation.Succedded();

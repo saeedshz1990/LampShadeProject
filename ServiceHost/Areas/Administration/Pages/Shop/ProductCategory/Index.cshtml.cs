@@ -1,8 +1,11 @@
 using System.Collections.Generic;
+using _0_FrameWork.Infrasutructure;
+using BlogManagement.Application.Contracts.ArticleCategory;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ShopManagement.Application.Contracts.ProductCategory;
+using ShopManagement.Infrasutructure.Configuration.Permissions;
 
 namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategory
 {
@@ -20,7 +23,8 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategory
         {
             _productCategoryApplication = productCategoryApplication;
         }
-        
+
+        [NeedsPermission(ShopPermissions.ListProductCategories)]
         public void OnGet(ProductCategorySearchModel searchModel)
         {
             ProductCategories = _productCategoryApplication.Search(searchModel);
@@ -29,10 +33,11 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategory
 
         public IActionResult OnGetCreate()
         {
-            return Partial("./Create",new CreateArticleCategory());
+            return Partial("./Create",new CreateProductCategory());
         }
 
-        public JsonResult OnPostCreate(CreateArticleCategory command)
+        [NeedsPermission(ShopPermissions.CreateProductCategory)]
+        public JsonResult OnPostCreate(CreateProductCategory command)
         {
             var result = _productCategoryApplication.Create(command);
             return new JsonResult(result);
@@ -44,6 +49,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategory
             return Partial("Edit", productCategory);
         }
 
+        [NeedsPermission(ShopPermissions.EditProductCategory)]
         public JsonResult OnPostEdit(EditProductCategory command)
         {
             if(ModelState.IsValid)

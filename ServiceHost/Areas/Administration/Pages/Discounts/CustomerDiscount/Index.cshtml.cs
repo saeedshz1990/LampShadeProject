@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using DiscountManagement.Application.Contracts.ColleagueDiscount;
 using DiscountManagement.Application.Contracts.CustomerDiscount;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -8,14 +9,13 @@ using ShopManagement.Application.Contracts.Product;
 
 namespace ServiceHost.Areas.Administration.Pages.Discounts.CustomerDiscount
 {
+    //[Authorize(Roles = Roles.Administator)]
     public class IndexModel : PageModel
     {
 
         [TempData]
         public string Message { get; set; }
-
-
-        public ColleagueDiscountSearchModel SearchModel;
+        public CustomerDiscountSearchModel SearchModel;
         public SelectList Products;
         //ProducCategoryViewModel use for Save
         public List<CustomerDiscountViewModel> CustomerDiscounts;
@@ -31,7 +31,7 @@ namespace ServiceHost.Areas.Administration.Pages.Discounts.CustomerDiscount
             _customerDiscountApplication = customerDiscountApplication;
         }
 
-        public void OnGet(ColleagueDiscountSearchModel searchModel)
+        public void OnGet(CustomerDiscountSearchModel searchModel)
         {
             Products = new SelectList(_productApplication.GetProducts(), "Id", "Name");
             CustomerDiscounts = _customerDiscountApplication.Search(searchModel);

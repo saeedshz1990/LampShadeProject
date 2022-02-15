@@ -52,7 +52,6 @@ namespace ShopManagement.Application
             _productPictureRepository.SaveChanges();
 
             return operation.Succedded();
-
         }
 
         public EditProductPicture GetDetails(long id)

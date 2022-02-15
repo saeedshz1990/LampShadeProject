@@ -1,4 +1,6 @@
-﻿namespace ShopManagement.Application
+﻿using ShopManagement.Application.Contracts.Order;
+
+namespace ShopManagement.Application
 {
     public class CartService : ICartService
     {

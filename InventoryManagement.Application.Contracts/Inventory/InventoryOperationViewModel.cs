@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace InventoryManagement.Application.Contracts.Inventory
+﻿namespace InventoryManagement.Application.Contracts.Inventory
 {
     public class InventoryOperationViewModel
     {

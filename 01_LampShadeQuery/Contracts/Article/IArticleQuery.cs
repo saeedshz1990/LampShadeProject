@@ -4,7 +4,7 @@ namespace _01_LampShadeQuery.Contracts.Article
 {
     public interface IArticleQuery
     {
-        List<ArticleQueryModel> LatestArtticles();
+        List<ArticleQueryModel> LatestArticles();
         ArticleQueryModel GetArticleDetails(string slug);
 
     }

@@ -15,7 +15,7 @@ namespace ShopManagement.Application.Contracts.Product
         //Return EditProduct and Get Id
         EditProduct GetDetails(long id);
 
-        //return list productviewmodel
+        //return list ProductViewModel
         List<ProductViewModel> Search(ProductSearchModel searchModel);
         List<ProductViewModel> GetProducts();
     }

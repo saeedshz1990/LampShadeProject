@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using _0_FrameWork.Application;
 using _0_FrameWork.Infrasutructure;
 using _01_LampShadeQuery.Contracts;

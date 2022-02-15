@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using _01_LampShadeQuery.Contracts.Product;
 using Microsoft.AspNetCore.Mvc;
 

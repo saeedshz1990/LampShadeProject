@@ -1,4 +1,7 @@
-﻿using InventoryManagement.Application;
+﻿using _0_FrameWork.Infrasutructure;
+using _01_LampShadeQuery.Contracts.Inventory;
+using _01_LampShadeQuery.Query;
+using InventoryManagement.Application;
 using InventoryManagement.Application.Contracts.Inventory;
 using InventoryManagement.Domain.InventoryAgg;
 using InventoryManagement.Infrasutructure.Configuration.Permissions;

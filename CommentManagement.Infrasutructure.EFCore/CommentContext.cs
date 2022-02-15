@@ -7,8 +7,6 @@ namespace CommentManagement.Infrasutructure.EFCore
     public class CommentContext : DbContext
     {
         public DbSet<Comment> Comments { get; set; }
-
-
         public CommentContext(DbContextOptions<CommentContext> options) : base(options)
         {
 
@@ -17,8 +15,6 @@ namespace CommentManagement.Infrasutructure.EFCore
         {
             var assembly = typeof(CommentMapping).Assembly;
             modelBuilder.ApplyConfigurationsFromAssembly(assembly);
-
-
             base.OnModelCreating(modelBuilder);
         }
 

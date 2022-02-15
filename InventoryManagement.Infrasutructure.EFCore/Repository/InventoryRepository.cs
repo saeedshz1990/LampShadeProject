@@ -11,7 +11,6 @@ namespace InventoryManagement.Infrasutructure.EFCore.Repository
 {
     public class InventoryRepository : RepositoryBase<long, Inventory>, IInventoryRepository
     {
-
         private readonly ShopContext _shopContext;
         private readonly AccountContext _accountContext;
         private readonly InventoryContext _inventoryContext;
@@ -57,17 +56,14 @@ namespace InventoryManagement.Infrasutructure.EFCore.Repository
             if (searchModel.ProductId > 0)
                 query = query.Where(x => x.ProductId == searchModel.ProductId);
 
-            //it means chebox is true then show me the false
+            //it means checkbox is true then show me the false
             if (!searchModel.InStock)
                 query = query.Where(x => x.InStock);
 
-
             var inventory = query.OrderByDescending(x => x.Id).ToList();
-
             inventory.ForEach(item =>
             {
                 item.Product = products.FirstOrDefault(x => x.Id == item.ProductId)?.Name;
-
 
             });
             return inventory;
@@ -75,7 +71,7 @@ namespace InventoryManagement.Infrasutructure.EFCore.Repository
 
         public List<InventoryOperationViewModel> GetOperationLog(long inventoryId)
         {
-            var accounts = _accountContext.Accounts.Select(x => new { x.Id, x.Fullname }).ToList();
+            var accounts = _accountContext.Account.Select(x => new { x.Id, x.Fullname }).ToList();
             var inventory = _inventoryContext.Inventory.FirstOrDefault(x => x.Id == inventoryId);
             var operations = inventory.Operations.Select(x => new InventoryOperationViewModel
             {

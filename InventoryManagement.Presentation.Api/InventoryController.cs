@@ -3,7 +3,6 @@ using _01_LampShadeQuery.Contracts.Inventory;
 using InventoryManagement.Application.Contracts.Inventory;
 using Microsoft.AspNetCore.Mvc;
 
-
 namespace InventoryManagement.Presentation.Api
 {
     [Route("api/[controller]")]

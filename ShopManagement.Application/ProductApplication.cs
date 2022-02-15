@@ -53,7 +53,7 @@ namespace ShopManagement.Application
 
             var slug = command.Slug.Slugify();
 
-            var categorySlug=_productCategoryRepository.GetSlugById(command.CategoryId);
+            //var categorySlug=_productCategoryRepository.GetSlugById(command.CategoryId);
             var path=$"{product.Category.Slug}//{slug}";
             var picturePath=_fileUploader.Upload(command.Picture, path);
 
@@ -66,17 +66,14 @@ namespace ShopManagement.Application
             return operation.Succedded();
         }
 
-        
-
         public EditProduct GetDetails(long id)
         {
-            return _productRepository.GetDeatails(id);
+            return _productRepository.GetDetails(id);
         }
 
         public List<ProductViewModel> Search(ProductSearchModel searchModel)
         {
             return _productRepository.Search(searchModel);
-
         }
 
         public List<ProductViewModel> GetProducts()

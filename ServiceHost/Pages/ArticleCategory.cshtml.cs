@@ -22,7 +22,7 @@ namespace ServiceHost.Pages
 
         public void OnGet(string id)
         {
-            LatestArticles = _articleQuery.LatestArtticles();
+            LatestArticles = _articleQuery.LatestArticles();
             ArticleCategory = _articleCategoryQuery.GetArticleCategory(id);
             ArticleCategories = _articleCategoryQuery.GetArticleCategories();
         }

@@ -1,4 +1,6 @@
-﻿using _01_LampShadeQuery.Contracts.Product;
+﻿using _0_FrameWork.Infrasutructure;
+using _01_LampShadeQuery.Contracts;
+using _01_LampShadeQuery.Contracts.Product;
 using _01_LampShadeQuery.Contracts.ProductCategory;
 using _01_LampShadeQuery.Contracts.Slide;
 using _01_LampShadeQuery.Query;
@@ -16,6 +18,9 @@ using ShopManagement.Domain.ProductCategoryAgg;
 using ShopManagement.Domain.ProductPictureAgg;
 using ShopManagement.Domain.Services;
 using ShopManagement.Domain.SlideAgg;
+using ShopManagement.Infrastructure.AccountAcl;
+using ShopManagement.Infrastructure.InventoryAcl;
+using ShopManagement.Infrasutructure.Configuration.Permissions;
 using ShopManagement.Infrasutructure.EFCore;
 using ShopManagement.Infrasutructure.EFCore.Repository;
 

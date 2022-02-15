@@ -19,7 +19,8 @@ namespace BlogManagement.Infrasutructure.EFCore.Repository
 
         public List<ArticleCategoryViewModel> GetArticleCategories()
         {
-            return _context.ArticleCategories.Select(x => new ArticleCategoryViewModel
+            return _context.ArticleCategories
+                .Select(x => new ArticleCategoryViewModel
             {
                 Id = x.Id,
                 Name = x.Name
@@ -27,7 +28,8 @@ namespace BlogManagement.Infrasutructure.EFCore.Repository
         }
         public EditArticleCategory GetDetails(long id)
         {
-            return _context.ArticleCategories.Select(x => new EditArticleCategory
+            return _context.ArticleCategories
+                .Select(x => new EditArticleCategory
             {
                 Id = x.Id,
                 Name = x.Name,
@@ -65,7 +67,8 @@ namespace BlogManagement.Infrasutructure.EFCore.Repository
 
         public string GetSlugBy(long id)
         {
-            return _context.ArticleCategories.Select(x => new { x.Id, x.Slug })
+            return _context.ArticleCategories
+                .Select(x => new { x.Id, x.Slug })
                 .FirstOrDefault(x => x.Id == id).Slug;
         }
     }

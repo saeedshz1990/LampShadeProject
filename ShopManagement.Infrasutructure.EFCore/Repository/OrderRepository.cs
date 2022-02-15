@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using _0_FrameWork.Application;
 using _0_FrameWork.Infrasutructure;
 using AccountManagement.Infrastructure.EFCore;
-using Microsoft.EntityFrameworkCore;
 using ShopManagement.Application.Contracts;
 using ShopManagement.Application.Contracts.Order;
 using ShopManagement.Domain.OrderAgg;
@@ -59,7 +56,7 @@ namespace ShopManagement.Infrasutructure.EFCore.Repository
 
         public List<OrderViewModel> Search(OrderSearchModel searchModel)
         {
-            var accounts = _accountContext.Accounts.Select(x => new { x.Id, x.Fullname }).ToList();
+            var accounts = _accountContext.Account.Select(x => new { x.Id, x.Fullname }).ToList();
             var query = _context.Orders.Select(x => new OrderViewModel
             {
                 Id = x.Id,

@@ -9,7 +9,8 @@ namespace InventoryManagement.Domain.InventoryAgg
         public long ProductId { get; private set; }
         public double UnitPrice { get; private set; }
         public bool InStock { get; private set; }
-        //Store list of inventoryoperation in Inventory
+
+        //Store list of inventoryOperation in Inventory
         public List<InventoryOperation> Operations { get; private set; }
 
         public Inventory(long productId, double unitPrice)
