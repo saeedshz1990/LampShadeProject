@@ -1,0 +1,41 @@
+[33mcommit b19e6099bc8eb87ede23aa7a304e3379624e4d79[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Saeed Ansari <68070998+saeedshz1990@users.noreply.github.com>
+Date:   Tue Feb 15 08:19:27 2022 +0330
+
+    implemnetedof order and other of  section of shop
+
+[33mcommit a62b5e75ae0aac13e0a9983dc90fa47f26424322[m
+Author: Saeed Ansari <68070998+saeedshz1990@users.noreply.github.com>
+Date:   Tue Feb 8 19:30:31 2022 +0330
+
+    The acount and permission implemented
+
+[33mcommit 478a549268c28f7835e03427917205cd5bc39179[m
+Author: Saeed Ansari <saeed.ansari1990@hotmail.com>
+Date:   Wed Jan 26 07:25:22 2022 +0330
+
+    Account Authenticated Implemented
+
+[33mcommit 847e37222e864b00d21ce0ba740fb4ac3807b354[m
+Author: Saeed Ansari <saeed.ansari1990@hotmail.com>
+Date:   Wed Jan 26 03:58:27 2022 +0330
+
+    Acount Implemented
+
+[33mcommit e02fa6070e774d8d1e5da9afabc467edd7656148[m
+Author: Saeed Ansari <saeed.ansari1990@hotmail.com>
+Date:   Wed Dec 29 18:37:14 2021 +0330
+
+    implemented Account and debug TheOther of site
+
+[33mcommit 90cb405e8808e08ef3d30c86f2eb206f63c491b1[m
+Author: Saeed Ansari <MG0014@Mahab.local>
+Date:   Wed Dec 22 15:07:51 2021 +0330
+
+    Add project files.
+
+[33mcommit 013d2e82a118eac215fbef850110357e4100867c[m
+Author: MG0014 <MG0014@IT>
+Date:   Wed Dec 22 15:07:26 2021 +0330
+
+    Add .gitignore and .gitattributes.
