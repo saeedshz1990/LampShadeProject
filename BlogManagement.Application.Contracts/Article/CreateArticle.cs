@@ -8,40 +8,40 @@ namespace BlogManagement.Application.Contracts.Article
     {
         [MaxLength(500, ErrorMessage = ValidationMessages.MaxLenght)]
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
-        public string Title { get; set; }
+        public string Title { get; set; } = string.Empty;
 
         [MaxLength(500, ErrorMessage = ValidationMessages.MaxLenght)]
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
-        public string ShortDescription { get; set; }
-        public string Description { get; set; }
+        public string ShortDescription { get; set; }= string.Empty;
+        public string Description { get; set; } = string.Empty;
 
         public IFormFile Picture { get; set; }
 
         [MaxLength(500, ErrorMessage = ValidationMessages.MaxLenght)]
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
-        public string PictureAlt { get; set; }
+        public string PictureAlt { get; set; }=string.Empty;
 
         [MaxLength(500, ErrorMessage = ValidationMessages.MaxLenght)]
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
-        public string PictureTitle { get; set; }
+        public string PictureTitle { get; set; } = string.Empty;
 
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
-        public string PublishDate { get; set; }
+        public string PublishDate { get; set; } = string.Empty;
 
         [MaxLength(500, ErrorMessage = ValidationMessages.MaxLenght)]
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
-        public string Slug { get; set; }
+        public string Slug { get; set; } = string.Empty;
 
         [MaxLength(100, ErrorMessage = ValidationMessages.MaxLenght)]
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
-        public string KeyWords { get; set; }
+        public string KeyWords { get; set; } = string.Empty;
 
         [MaxLength(150, ErrorMessage = ValidationMessages.MaxLenght)]
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
-        public string Metadescription { get; set; }
+        public string Metadescription { get; set; }= string.Empty;
 
         [MaxLength(1000, ErrorMessage = ValidationMessages.MaxLenght)]
-        public string CanonicalAddress { get; set; }
+        public string CanonicalAddress { get; set; } = string.Empty;
 
         [Range(1, long.MaxValue, ErrorMessage = ValidationMessages.IsRequired)]
         public long CategoryId { get; set; }

@@ -1,24 +1,29 @@
 ﻿using _0_FrameWork.Application;
 using AccountManagement.Application.Contracts.Role;
 using Microsoft.AspNetCore.Http;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace AccountManagement.Application.Contracts.Account
 {
     public class RegisterAccount
     {
-        [Required(ErrorMessage = ValidationMessages.IsRequired)]
-        public string Fullname { get; set; }
+        public RegisterAccount()
+        {
+            Roles = new List<RoleViewModel>();
+        }
+
 
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
-        public string Username { get; set; }
+        public string Fullname { get; set; } = string.Empty;
 
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
-        public string Password { get; set; }
+        public string Username { get; set; } = string.Empty;
 
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
-        public string Mobile { get; set; }
+        public string Password { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = ValidationMessages.IsRequired)]
+        public string Mobile { get; set; } = string.Empty;
 
         public long RoleId { get; set; }
 

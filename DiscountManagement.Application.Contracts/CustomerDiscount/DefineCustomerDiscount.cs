@@ -7,6 +7,12 @@ namespace DiscountManagement.Application.Contracts.CustomerDiscount
 {
     public class DefineCustomerDiscount
     {
+
+        public DefineCustomerDiscount()
+        {
+            Products = new List<ProductViewModel>();
+        }
+
         [Range(1, 100000, ErrorMessage = ValidationMessages.IsRequired)]
         public long ProductId { get; set; }
 
@@ -14,11 +20,11 @@ namespace DiscountManagement.Application.Contracts.CustomerDiscount
         public int DiscountRate { get; set; }
 
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
-        public string StartDate { get; set; }
+        public string StartDate { get; set; } = string.Empty;
 
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
-        public string EndDate { get; set; }
-        public string Reason { get; set; }
+        public string EndDate { get; set; } = string.Empty;
+        public string Reason { get; set; } = string.Empty;
         public List<ProductViewModel> Products { get; set; }
 
     }

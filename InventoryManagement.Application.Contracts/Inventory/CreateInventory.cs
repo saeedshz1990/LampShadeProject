@@ -7,6 +7,12 @@ namespace InventoryManagement.Application.Contracts.Inventory
 {
     public class CreateInventory
     {
+
+        public CreateInventory()
+        {
+            Products = new List<ProductViewModel>();
+        }
+
         [Range(1, 10000, ErrorMessage = ValidationMessages.IsRequired)]
         public long ProductId { get; set; }
 

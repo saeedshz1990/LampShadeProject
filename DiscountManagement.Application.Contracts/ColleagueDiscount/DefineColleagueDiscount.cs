@@ -7,6 +7,12 @@ namespace DiscountManagement.Application.Contracts.ColleagueDiscount
 {
     public class DefineColleagueDiscount
     {
+
+        public DefineColleagueDiscount()
+        {
+            Products = new List<ProductViewModel>();
+        }
+
         [Range(1, 100000, ErrorMessage = ValidationMessages.IsRequired)]
         public long ProductId { get; set; }
 

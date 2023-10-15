@@ -9,17 +9,21 @@ namespace ShopManagement.Domain.ProductAgg
     public class Product : EntityBase
     {
 
+        public Product()
+        {
+            ProductPictures=new List<ProductPicture>();
+        }
 
-        public string Name { get; private set; }
-        public string Code { get; private set; }
-        public string ShortDescription { get; private set; }
-        public string Description { get; private set; }
-        public string Picture { get; private set; }
-        public string PictureAlt { get; private set; }
-        public string PictureTitle { get; private set; }
-        public string KeyWords { get; private set; }
-        public string MetaDescription { get; private set; }
-        public string Slug { get; private set; }
+        public string Name { get; private set; } = string.Empty;
+        public string Code { get; private set; } = string.Empty;
+        public string ShortDescription { get; private set; } = string.Empty;
+        public string Description { get; private set; } = string.Empty;
+        public string Picture { get; private set; } = string.Empty;
+        public string PictureAlt { get; private set; } = string.Empty;
+        public string PictureTitle { get; private set; } = string.Empty;
+        public string KeyWords { get; private set; } = string.Empty;
+        public string MetaDescription { get; private set; } = string.Empty;
+        public string Slug { get; private set; } = string.Empty;
         public long CategoryId { get; private set; }
         public ProductCategory Category { get; private set; }
         public List<ProductPicture> ProductPictures { get; private set; }

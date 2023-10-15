@@ -5,15 +5,15 @@ namespace ShopManagement.Domain.SlideAgg
 {
     public class Slide :EntityBase
     {
-        public string Picture { get; private set; }
-        public string PictureAlt { get; private set; }
-        public string PictureTitle { get; private set; }
-        public string Heading { get; private set; }
-        public string Title { get; private set; }
-        public string Text { get; private set; }
-        public string BtnText { get; private set; }
+        public string Picture { get; private set; } = string.Empty;
+        public string PictureAlt { get; private set; } = string.Empty;
+        public string PictureTitle { get; private set; } = string.Empty;
+        public string Heading { get; private set; } = string.Empty;
+        public string Title { get; private set; } = string.Empty;
+        public string Text { get; private set; } = string.Empty;
+        public string BtnText { get; private set; } = string.Empty;
         public bool IsRemoved { get; private set; }
-        public string Link { get;private set; }
+        public string Link { get; private set; } = string.Empty;
 
         public Slide(string picture, string pictureAlt, string pictureTitle, 
             string heading, string title, string text,string link, string btnText)
