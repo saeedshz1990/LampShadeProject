@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using _0_FrameWork.Application;
 using _01_LampShadeQuery.Contracts.Comment;
 using _01_LampShadeQuery.Contracts.Product;
@@ -88,7 +85,7 @@ namespace _01_LampShadeQuery.Query
                 Id = x.Id,
                 Name = x.Name,
                 Message = x.Message,
-                CreationDate=x.CreationDate.ToFarsi()
+                CreationDate = x.CreationDate.ToFarsi()
             }).OrderByDescending(x => x.Id).ToList();
 
             return product;

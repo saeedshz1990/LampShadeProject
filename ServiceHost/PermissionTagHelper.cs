@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using _0_FrameWork.Application;
+﻿using _0_FrameWork.Application;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 
 namespace ServiceHost

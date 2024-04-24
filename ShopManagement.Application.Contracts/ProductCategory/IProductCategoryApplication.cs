@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using _0_FrameWork.Application;
+﻿using _0_FrameWork.Application;
 
 namespace ShopManagement.Application.Contracts.ProductCategory
 {
@@ -7,7 +6,7 @@ namespace ShopManagement.Application.Contracts.ProductCategory
     {
         OperationResult Create(CreateProductCategory command);
         OperationResult Edit(EditProductCategory command);
-        EditProductCategory GetDetails(long id); 
+        EditProductCategory GetDetails(long id);
         List<ProductCategoryViewModel> Search(ProductCategorySearchModel searchModel);
         List<ProductCategoryViewModel> GetProductCategories();
     }

@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using DiscountManagement.Application.Contracts.ColleagueDiscount;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -54,7 +53,7 @@ namespace ServiceHost.Areas.Administration.Pages.Discounts.ColleagueDiscount
 
         public IActionResult OnGetEdit(long id)
         {
-            var colleagueDiscount =_colleagueDiscountApplication.GetDetials(id);
+            var colleagueDiscount = _colleagueDiscountApplication.GetDetials(id);
             colleagueDiscount.Products = _productApplication.GetProducts();
             return Partial("Edit", colleagueDiscount);
         }

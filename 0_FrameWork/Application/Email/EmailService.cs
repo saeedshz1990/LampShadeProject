@@ -1,5 +1,5 @@
-﻿using MimeKit;
-using MailKit.Net.Smtp;
+﻿using MailKit.Net.Smtp;
+using MimeKit;
 
 namespace _0_FrameWork.Application.Email
 {
@@ -9,7 +9,7 @@ namespace _0_FrameWork.Application.Email
         {
             var message = new MimeMessage();
 
-            var from = new MailboxAddress("Atriya", "test@atriya.com");
+            var from = new MailboxAddress("Saeed", "test@Saeed.com");
             message.From.Add(from);
 
             var to = new MailboxAddress("User", destination);
@@ -24,8 +24,8 @@ namespace _0_FrameWork.Application.Email
             message.Body = bodyBuilder.ToMessageBody();
 
             var client = new SmtpClient();
-            client.Connect("185.88.152.251", 25, false);
-            client.Authenticate("test@atriya.com", "Atriya.123456");
+            client.Connect("185.88.152.251", 25, false);// تنظیمات ایمیل باید عوض شود
+            client.Authenticate("test@Saeed.com", "Saeed.123456");
             client.Send(message);
             client.Disconnect(true);
             client.Dispose();

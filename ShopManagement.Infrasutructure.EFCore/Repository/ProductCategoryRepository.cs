@@ -1,9 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using _0_FrameWork.Application;
+using _0_FrameWork.Infrasutructure;
 using ShopManagement.Application.Contracts.ProductCategory;
 using ShopManagement.Domain.ProductCategoryAgg;
-using _0_FrameWork.Infrasutructure;
-using _0_FrameWork.Application;
 
 namespace ShopManagement.Infrasutructure.EFCore.Repository
 {

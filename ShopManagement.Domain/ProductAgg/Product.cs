@@ -1,7 +1,6 @@
-﻿using ShopManagement.Domain.ProductCategoryAgg;
-using _0_FrameWork.Domain;
+﻿using _0_FrameWork.Domain;
+using ShopManagement.Domain.ProductCategoryAgg;
 using ShopManagement.Domain.ProductPictureAgg;
-using System.Collections.Generic;
 
 
 namespace ShopManagement.Domain.ProductAgg
@@ -11,7 +10,7 @@ namespace ShopManagement.Domain.ProductAgg
 
         public Product()
         {
-            ProductPictures=new List<ProductPicture>();
+            ProductPictures = new List<ProductPicture>();
         }
 
         public string Name { get; private set; } = string.Empty;
@@ -46,11 +45,11 @@ namespace ShopManagement.Domain.ProductAgg
             MetaDescription = metaDescription;
             Slug = slug;
             CategoryId = categoryId;
-            
+
         }
 
 
-        public void Edit(string name, string code, 
+        public void Edit(string name, string code,
             string shortDescription, string description, string picture,
             string pictureAlt, string pictureTitle, string keyWords,
             string metaDescription, string slug, long categoryId)
@@ -60,10 +59,10 @@ namespace ShopManagement.Domain.ProductAgg
 
             ShortDescription = shortDescription;
             Description = description;
-            
-            if(!string.IsNullOrWhiteSpace(picture))
+
+            if (!string.IsNullOrWhiteSpace(picture))
                 Picture = picture;
-            
+
             PictureAlt = pictureAlt;
             PictureTitle = pictureTitle;
             KeyWords = keyWords;
@@ -72,7 +71,7 @@ namespace ShopManagement.Domain.ProductAgg
             CategoryId = categoryId;
         }
 
-       
+
 
     }
 }

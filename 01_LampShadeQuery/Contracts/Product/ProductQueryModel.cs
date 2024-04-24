@@ -1,5 +1,4 @@
 using _01_LampShadeQuery.Contracts.Comment;
-using System.Collections.Generic;
 
 namespace _01_LampShadeQuery.Contracts.Product
 {
@@ -27,7 +26,7 @@ namespace _01_LampShadeQuery.Contracts.Product
         public bool IsInStock { get; set; }
         public List<CommentQueryModel> Comments { get; set; }
         public List<ProductPictureQueryModel> Pictures { get; set; }
-        
+
 
     }
 }

@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using _0_FrameWork.Application;
+﻿using _0_FrameWork.Application;
 using ShopManagement.Application.Contracts.Slide;
 using ShopManagement.Domain.SlideAgg;
 
@@ -10,20 +9,20 @@ namespace ShopManagement.Application
         private readonly IFileUploader _fileUploader;
         private readonly ISlideRepository _slideRepository;
 
-        public SlideApplication(ISlideRepository slideRepository,IFileUploader fileUploader)
+        public SlideApplication(ISlideRepository slideRepository, IFileUploader fileUploader)
         {
             _slideRepository = slideRepository;
-            _fileUploader=fileUploader;
+            _fileUploader = fileUploader;
         }
 
         public OperationResult Create(CreateSlide command)
         {
             var operation = new OperationResult();
 
-            var pictureName=_fileUploader.Upload(command.Picture,"Slides");
+            var pictureName = _fileUploader.Upload(command.Picture, "Slides");
 
-            var slide = new Slide(pictureName,command.PictureAlt,command.PictureTitle,
-                command.Heading,command.Title,command.Text,command.Link, command.BtnText);
+            var slide = new Slide(pictureName, command.PictureAlt, command.PictureTitle,
+                command.Heading, command.Title, command.Text, command.Link, command.BtnText);
 
             _slideRepository.Create(slide);
             _slideRepository.SaveChanges();
@@ -37,7 +36,7 @@ namespace ShopManagement.Application
             if (slide == null)
                 return operation.Failed(ApplicationMessages.RecordNotFound);
 
-            var pictureName=_fileUploader.Upload(command.Picture,"Slides");
+            var pictureName = _fileUploader.Upload(command.Picture, "Slides");
 
             slide.Edit(pictureName, command.PictureAlt, command.PictureTitle,
                 command.Heading, command.Title, command.Text, command.Link, command.BtnText);

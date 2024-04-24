@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using _0_FrameWork.Application;
+﻿using _0_FrameWork.Application;
 using DiscountManagement.Application.Contracts.CustomerDiscount;
 using DiscountManagement.Domain.CustomerDiscountAgg;
 

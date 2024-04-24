@@ -1,6 +1,5 @@
 ﻿using _0_FrameWork.Application;
 using ShopManagement.Application.Contracts.Product;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace DiscountManagement.Application.Contracts.ColleagueDiscount

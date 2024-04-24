@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace InventoryManagement.Domain.InventoryAgg
+﻿namespace InventoryManagement.Domain.InventoryAgg
 {
     public class InventoryOperation
     {
@@ -15,10 +13,10 @@ namespace InventoryManagement.Domain.InventoryAgg
         public long InventoryId { get; private set; }
         public Inventory Inventory { get; private set; }
 
-        protected InventoryOperation(){}
+        protected InventoryOperation() { }
 
         public InventoryOperation(bool operation, long count, long operatorId,
-            long currentCount,string description, long orderId, long inventoryId)
+            long currentCount, string description, long orderId, long inventoryId)
         {
             Operation = operation;
             Count = count;

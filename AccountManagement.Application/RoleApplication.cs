@@ -1,7 +1,6 @@
 ﻿using _0_FrameWork.Application;
 using AccountManagement.Application.Contracts.Role;
 using AccountManagement.Domain.RoleAgg;
-using System.Collections.Generic;
 
 namespace AccountManagement.Application
 {
@@ -9,7 +8,7 @@ namespace AccountManagement.Application
     {
         private readonly IRoleRepository _roleRepository;
 
-        public RoleApplication (IRoleRepository roleRepository)
+        public RoleApplication(IRoleRepository roleRepository)
         {
             _roleRepository = roleRepository;
         }

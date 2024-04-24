@@ -12,11 +12,11 @@ namespace BlogManagement.Application.Contracts.ArticleCategory
 
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
 
-        public string PictureAlt { get; set; }= string.Empty;
+        public string PictureAlt { get; set; } = string.Empty;
 
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
 
-        public string PictureTitle { get; set; }=string.Empty;
+        public string PictureTitle { get; set; } = string.Empty;
 
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
         public string Description { get; set; } = string.Empty;

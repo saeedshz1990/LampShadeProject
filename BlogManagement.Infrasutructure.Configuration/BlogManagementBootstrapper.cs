@@ -8,7 +8,6 @@ using BlogManagement.Domain.ArticleAgg;
 using BlogManagement.Domain.ArticleCategoryAgg;
 using BlogManagement.Infrasutructure.EFCore;
 using BlogManagement.Infrasutructure.EFCore.Repository;
-using InventoryManagement.Infrasutructure.EFCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 

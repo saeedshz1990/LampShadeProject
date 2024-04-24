@@ -1,6 +1,5 @@
 using _0_FrameWork.Domain;
 using BlogManagement.Domain.ArticleCategoryAgg;
-using System;
 
 namespace BlogManagement.Domain.ArticleAgg
 {
@@ -49,7 +48,7 @@ namespace BlogManagement.Domain.ArticleAgg
 
             if (!string.IsNullOrWhiteSpace(picture))
                 Picture = picture;
-                
+
             PictureAlt = pictureAlt;
             PictureTitle = pictureTitle;
             PublishDate = publishDate;

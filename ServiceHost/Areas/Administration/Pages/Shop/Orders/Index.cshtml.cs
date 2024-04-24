@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using AccountManagement.Application.Contracts.Account;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;

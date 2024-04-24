@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using _0_FrameWork.Application;
+﻿using _0_FrameWork.Application;
 using _0_FrameWork.Infrasutructure;
 using DiscountManagement.Application.Contracts.CustomerDiscount;
 using DiscountManagement.Domain.CustomerDiscountAgg;
@@ -45,7 +43,7 @@ namespace DiscountManagement.Infrasutructure.EFCore.Repository
                 EndDate = x.EndDate.ToFarsi(),
                 EndDateGR = x.EndDate,
                 Reason = x.Reason,
-                CreationDate=x.CreationDate.ToFarsi()
+                CreationDate = x.CreationDate.ToFarsi()
             });
             if (searchModel.ProductId > 0)
                 query = query.Where(x => x.ProductId == searchModel.ProductId);

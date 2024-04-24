@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using ShopManagement.Domain.OrderAgg;
+﻿using ShopManagement.Domain.OrderAgg;
 
 namespace ShopManagement.Domain.Services
 {

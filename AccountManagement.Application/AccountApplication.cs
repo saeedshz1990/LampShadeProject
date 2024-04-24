@@ -1,8 +1,6 @@
 ﻿using _0_FrameWork.Application;
 using AccountManagement.Application.Contracts.Account;
 using AccountManagement.Domain.AccountAgg;
-using System.Collections.Generic;
-using System.Linq;
 using AccountManagement.Domain.RoleAgg;
 
 namespace AccountManagement.Application

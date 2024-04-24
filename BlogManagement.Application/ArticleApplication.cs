@@ -2,7 +2,6 @@ using _0_FrameWork.Application;
 using BlogManagement.Application.Contracts.Article;
 using BlogManagement.Domain.ArticleAgg;
 using BlogManagement.Domain.ArticleCategoryAgg;
-using System.Collections.Generic;
 
 namespace BlogManagement.Application
 {
@@ -61,7 +60,7 @@ namespace BlogManagement.Application
             var pictureName = _fileUploader.Upload(command.Picture, path);
             article.Edit(command.Title, command.ShortDescription, command.Description, pictureName,
                     command.PictureAlt, command.PictureTitle, publishDate, slug, command.KeyWords,
-                    command.Metadescription,command.CanonicalAddress, command.CategoryId);
+                    command.Metadescription, command.CanonicalAddress, command.CategoryId);
 
             _articleRepository.SaveChanges();
             return operation.Succedded();

@@ -1,6 +1,5 @@
 using _0_FrameWork.Domain;
 using BlogManagement.Application.Contracts.ArticleCategory;
-using System.Collections.Generic;
 
 namespace BlogManagement.Domain.ArticleCategoryAgg
 {

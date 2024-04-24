@@ -1,10 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using _0_FrameWork.Domain;
 using ShopManagement.Application.Contracts.Product;
-using _0_FrameWork.Domain;
 
 namespace ShopManagement.Domain.ProductAgg
 {
-    public interface IProductRepository : IRepository<long,Product>
+    public interface IProductRepository : IRepository<long, Product>
     {
         Product GetProductWithCategory(long id);
         // return list product view model

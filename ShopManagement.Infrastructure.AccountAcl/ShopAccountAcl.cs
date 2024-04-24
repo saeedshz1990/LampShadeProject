@@ -1,5 +1,4 @@
-﻿using System;
-using AccountManagement.Application.Contracts.Account;
+﻿using AccountManagement.Application.Contracts.Account;
 using ShopManagement.Domain.Services;
 
 namespace ShopManagement.Infrastructure.AccountAcl

@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using _0_FrameWork.Application;
 using _01_LampShadeQuery.Contracts.Article;
 using _01_LampShadeQuery.Contracts.Comment;
@@ -15,10 +12,10 @@ namespace _01_LampShadeQuery.Query
         private readonly BlogManagementContext _context;
         private readonly CommentContext _commentContext;
 
-        public ArticleQuery(BlogManagementContext context , CommentContext commentContext )
+        public ArticleQuery(BlogManagementContext context, CommentContext commentContext)
         {
             _context = context;
-            _commentContext=commentContext;
+            _commentContext = commentContext;
         }
 
         public ArticleQueryModel GetArticleDetails(string slug)
@@ -27,7 +24,7 @@ namespace _01_LampShadeQuery.Query
              .Include(x => x.Category)
              .Where(x => x.PublishDate <= DateTime.Now).Select(x => new ArticleQueryModel
              {
-                 Id=x.Id,
+                 Id = x.Id,
                  Slug = x.Slug,
                  Title = x.Title,
                  Picture = x.Picture,
@@ -43,35 +40,35 @@ namespace _01_LampShadeQuery.Query
                  Metadescription = x.Metadescription,
                  ShortDescription = x.ShortDescription
              }).FirstOrDefault(x => x.Slug == slug);
-             
-              if(!string.IsNullOrWhiteSpace(article.KeyWords))
-                article.KeyWordList=article.KeyWords.Split(",").ToList();
+
+            if (!string.IsNullOrWhiteSpace(article.KeyWords))
+                article.KeyWordList = article.KeyWords.Split(",").ToList();
 
 
-                var comments = _commentContext.Comments
-                    .Where(x => !x.IsCanceled)
-                    .Where(x => x.IsConfirmed)
-                    .Where(x => x.Type == CommentType.Article)
-                    .Where(x => x.OwnerRecordId == article.Id)
-                    .Select(x => new CommentQueryModel
-                    {
-                        Id = x.Id,
-                        Name = x.Name,
-                        Message = x.Message,
-                        CreationDate=x.CreationDate.ToFarsi(),
-                        ParentId=x.ParentId,
-                        WEbsite=x.Website
-                    }).OrderByDescending(x => x.Id).ToList();
-
-                foreach (var comment in comments)
+            var comments = _commentContext.Comments
+                .Where(x => !x.IsCanceled)
+                .Where(x => x.IsConfirmed)
+                .Where(x => x.Type == CommentType.Article)
+                .Where(x => x.OwnerRecordId == article.Id)
+                .Select(x => new CommentQueryModel
                 {
-                    if(comment.ParentId > 0)
-                        comment.ParentName=comments.FirstOrDefault(x=>x.Id==comment.ParentId)?.Name;
-                    
-                }
-                article.Comments=comments;
+                    Id = x.Id,
+                    Name = x.Name,
+                    Message = x.Message,
+                    CreationDate = x.CreationDate.ToFarsi(),
+                    ParentId = x.ParentId,
+                    WEbsite = x.Website
+                }).OrderByDescending(x => x.Id).ToList();
 
-             return article;
+            foreach (var comment in comments)
+            {
+                if (comment.ParentId > 0)
+                    comment.ParentName = comments.FirstOrDefault(x => x.Id == comment.ParentId)?.Name;
+
+            }
+            article.Comments = comments;
+
+            return article;
         }
 
         public List<ArticleQueryModel> LatestArticles()

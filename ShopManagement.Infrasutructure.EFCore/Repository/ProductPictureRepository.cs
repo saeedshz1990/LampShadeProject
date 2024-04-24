@@ -3,11 +3,6 @@ using _0_FrameWork.Infrasutructure;
 using Microsoft.EntityFrameworkCore;
 using ShopManagement.Application.Contracts.ProductPicture;
 using ShopManagement.Domain.ProductPictureAgg;
-using ShopManagement.Infrasutructure.EFCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace ShopManagement.Infrasutructure.EFCore.Repository
 {

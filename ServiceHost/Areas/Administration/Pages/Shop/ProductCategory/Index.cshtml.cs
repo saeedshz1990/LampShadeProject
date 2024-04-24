@@ -1,7 +1,4 @@
-using System.Collections.Generic;
 using _0_FrameWork.Infrasutructure;
-using BlogManagement.Application.Contracts.ArticleCategory;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ShopManagement.Application.Contracts.ProductCategory;
@@ -33,7 +30,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategory
 
         public IActionResult OnGetCreate()
         {
-            return Partial("./Create",new CreateProductCategory());
+            return Partial("./Create", new CreateProductCategory());
         }
 
         [NeedsPermission(ShopPermissions.CreateProductCategory)]
@@ -52,9 +49,9 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategory
         [NeedsPermission(ShopPermissions.EditProductCategory)]
         public JsonResult OnPostEdit(EditProductCategory command)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                
+
             }
             var result = _productCategoryApplication.Edit(command);
             return new JsonResult(result);

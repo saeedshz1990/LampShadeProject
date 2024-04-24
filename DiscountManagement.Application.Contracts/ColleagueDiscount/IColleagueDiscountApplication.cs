@@ -1,6 +1,4 @@
 ﻿using _0_FrameWork.Application;
-using DiscountManagement.Application.Contracts.ColleagueDiscount;
-using System.Collections.Generic;
 
 namespace DiscountManagement.Application.Contracts.ColleagueDiscount
 {

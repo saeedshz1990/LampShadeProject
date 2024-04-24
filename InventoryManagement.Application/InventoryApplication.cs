@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
-using InventoryManagement.Domain.InventoryAgg;
-using _0_FrameWork.Application;
+﻿using _0_FrameWork.Application;
 using InventoryManagement.Application.Contracts.Inventory;
+using InventoryManagement.Domain.InventoryAgg;
 
 namespace InventoryManagement.Application
 {
@@ -38,7 +37,7 @@ namespace InventoryManagement.Application
 
             if (_inventoryRepository.Exists(x => x.ProductId == command.ProductId && x.Id != command.Id))
                 return operation.Failed(ApplicationMessages.DuplicatedRecord);
-                
+
             inventory.Edit(command.ProductId, command.UnitPrice);
             _inventoryRepository.SaveChanges();
             return operation.Succedded();

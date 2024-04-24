@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using _0_FrameWork.Application;
+﻿using _0_FrameWork.Application;
 using _0_FrameWork.Infrasutructure;
 using AccountManagement.Infrastructure.EFCore;
 using ShopManagement.Application.Contracts;
@@ -86,6 +84,6 @@ namespace ShopManagement.Infrasutructure.EFCore.Repository
             return orders;
         }
 
-       
+
     }
 }

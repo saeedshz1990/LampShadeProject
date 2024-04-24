@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using _01_LampShadeQuery.Contracts.Article;
-using Microsoft.AspNetCore.Http;
+﻿using _01_LampShadeQuery.Contracts.Article;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlogManagement.Presentation.Api.Controllers

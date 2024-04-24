@@ -2,8 +2,6 @@
 using _0_FrameWork.Infrasutructure;
 using AccountManagement.Application.Contracts.Role;
 using AccountManagement.Domain.RoleAgg;
-using System.Collections.Generic;
-using System.Linq;
 using Microsoft.EntityFrameworkCore;
 
 namespace AccountManagement.Infrastructure.EFCore.Repository

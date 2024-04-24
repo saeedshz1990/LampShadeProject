@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using _01_LampShadeQuery.Contracts.Slide;
+﻿using _01_LampShadeQuery.Contracts.Slide;
 using ShopManagement.Infrasutructure.EFCore;
 
 namespace _01_LampShadeQuery.Query
@@ -18,17 +16,17 @@ namespace _01_LampShadeQuery.Query
         {
             return _shopContext.Slides.Where(x => x.IsRemoved == false)
                 .Select(x => new SlideQueryModel
-            {
-                Text = x.Text,
-                Title = x.Title,
-                Heading = x.Heading,
-                BtnText = x.BtnText,
-                Picture = x.Picture,
-                PictureAlt = x.PictureAlt,
-                PictureTitle = x.PictureTitle,
-                Link = x.Link
+                {
+                    Text = x.Text,
+                    Title = x.Title,
+                    Heading = x.Heading,
+                    BtnText = x.BtnText,
+                    Picture = x.Picture,
+                    PictureAlt = x.PictureAlt,
+                    PictureTitle = x.PictureTitle,
+                    Link = x.Link
 
-            }).ToList();
+                }).ToList();
         }
     }
 }

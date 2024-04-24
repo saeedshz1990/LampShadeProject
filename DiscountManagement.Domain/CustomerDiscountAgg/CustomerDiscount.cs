@@ -1,5 +1,4 @@
 ﻿using _0_FrameWork.Domain;
-using System;
 
 namespace DiscountManagement.Domain.CustomerDiscountAgg
 {
@@ -23,9 +22,9 @@ namespace DiscountManagement.Domain.CustomerDiscountAgg
             Reason = reason;
         }
 
-       
+
         //all Item Editable
-        public void  Edit(long productId, int discountRate, DateTime startDate,
+        public void Edit(long productId, int discountRate, DateTime startDate,
             DateTime endDate, string reason)
         {
             ProductId = productId;

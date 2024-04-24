@@ -3,9 +3,6 @@ using _0_FrameWork.Infrasutructure;
 using BlogManagement.Application.Contracts.Article;
 using BlogManagement.Domain.ArticleAgg;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace BlogManagement.Infrasutructure.EFCore.Repository
 {

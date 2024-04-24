@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using _0_FrameWork.Application;
+﻿using _0_FrameWork.Application;
 using _0_FrameWork.Infrasutructure;
 using DiscountManagement.Application.Contracts.ColleagueDiscount;
 using DiscountManagement.Domain.ColleagueDiscountAgg;
@@ -24,11 +22,11 @@ namespace DiscountManagement.Infrasutructure.EFCore.Repository
         {
             return _context.ColleagueDiscounts
                 .Select(x => new EditColleagueDiscount
-            {
-                Id = x.Id,
-                ProductId = x.ProductId,
-                DiscountRate = x.DiscountRate
-            }).FirstOrDefault(x => x.Id == id);
+                {
+                    Id = x.Id,
+                    ProductId = x.ProductId,
+                    DiscountRate = x.DiscountRate
+                }).FirstOrDefault(x => x.Id == id);
         }
 
         public List<ColleagueDiscountViewModel> Search(ColleagueDiscountSearchModel searchModel)
@@ -37,13 +35,13 @@ namespace DiscountManagement.Infrasutructure.EFCore.Repository
                 .Select(x => new { x.Id, x.Name }).ToList();
             var query = _context.ColleagueDiscounts
                 .Select(x => new ColleagueDiscountViewModel
-            {
-                Id = x.Id,
-                DiscountRate = x.DiscountRate,
-                CreationDate = x.CreationDate.ToFarsi(),
-                ProductId = x.ProductId,
-                IsRemoved = x.IsRemoved
-            });
+                {
+                    Id = x.Id,
+                    DiscountRate = x.DiscountRate,
+                    CreationDate = x.CreationDate.ToFarsi(),
+                    ProductId = x.ProductId,
+                    IsRemoved = x.IsRemoved
+                });
 
             if (searchModel.ProductId > 0)
                 query = query.Where(x => x.ProductId == searchModel.ProductId);

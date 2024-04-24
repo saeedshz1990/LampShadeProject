@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using _0_FrameWork.Domain;
+﻿using _0_FrameWork.Domain;
 using ShopManagement.Application.Contracts.Order;
 
 namespace ShopManagement.Domain.OrderAgg

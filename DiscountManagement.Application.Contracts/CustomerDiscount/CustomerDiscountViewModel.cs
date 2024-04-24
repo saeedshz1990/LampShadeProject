@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DiscountManagement.Application.Contracts.CustomerDiscount
+﻿namespace DiscountManagement.Application.Contracts.CustomerDiscount
 {
     public class CustomerDiscountViewModel
     {

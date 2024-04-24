@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ShopManagement.Application.Contracts.Slide;
@@ -12,7 +11,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Slides
         public string Message { get; set; }
 
 
-         //ProducCategoryViewModel use for Save
+        //ProducCategoryViewModel use for Save
         public List<SlideViewModel> Slides;
         private readonly ISlideApplication _slideApplication;
 
@@ -29,7 +28,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Slides
         public IActionResult OnGetCreate()
         {
             var command = new CreateSlide();
-            return Partial("./Create",command);
+            return Partial("./Create", command);
         }
 
         public JsonResult OnPostCreate(CreateSlide command)
@@ -52,7 +51,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Slides
 
         public IActionResult OnGetRemove(long id)
         {
-           var result = _slideApplication.Remove(id);
+            var result = _slideApplication.Remove(id);
             if (result.IsSuccedded)
                 return RedirectToPage("./Index");
 

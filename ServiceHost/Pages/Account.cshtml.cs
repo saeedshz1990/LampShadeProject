@@ -23,7 +23,7 @@ namespace ServiceHost.Pages
 
         public IActionResult OnPostLogin(Login command)
         {
-           var result= _accountApplication.Login(command);
+            var result = _accountApplication.Login(command);
             if (result.IsSuccedded)
                 return RedirectToPage("/Index");
 
@@ -38,11 +38,11 @@ namespace ServiceHost.Pages
         }
         public IActionResult OnPostRegister(RegisterAccount command)
         {
-           var result= _accountApplication.Register(command);
-            if(result.IsSuccedded)
+            var result = _accountApplication.Register(command);
+            if (result.IsSuccedded)
                 return RedirectToPage("/Account");
 
-           RegisterMessage=result.Message;
+            RegisterMessage = result.Message;
             return RedirectToPage("/Account");
         }
     }

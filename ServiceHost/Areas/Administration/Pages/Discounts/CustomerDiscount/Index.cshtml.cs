@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-using DiscountManagement.Application.Contracts.ColleagueDiscount;
 using DiscountManagement.Application.Contracts.CustomerDiscount;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -55,7 +53,7 @@ namespace ServiceHost.Areas.Administration.Pages.Discounts.CustomerDiscount
 
         public IActionResult OnGetEdit(long id)
         {
-            var customerDiscount =_customerDiscountApplication.GetDatails(id);
+            var customerDiscount = _customerDiscountApplication.GetDatails(id);
             customerDiscount.Products = _productApplication.GetProducts();
             return Partial("Edit", customerDiscount);
         }
@@ -66,6 +64,6 @@ namespace ServiceHost.Areas.Administration.Pages.Discounts.CustomerDiscount
             return new JsonResult(result);
         }
 
-        
+
     }
 }

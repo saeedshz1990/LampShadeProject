@@ -1,9 +1,8 @@
-﻿using System;
-using _0_FrameWork.Domain;
+﻿using _0_FrameWork.Domain;
 
 namespace ShopManagement.Domain.SlideAgg
 {
-    public class Slide :EntityBase
+    public class Slide : EntityBase
     {
         public string Picture { get; private set; } = string.Empty;
         public string PictureAlt { get; private set; } = string.Empty;
@@ -15,8 +14,8 @@ namespace ShopManagement.Domain.SlideAgg
         public bool IsRemoved { get; private set; }
         public string Link { get; private set; } = string.Empty;
 
-        public Slide(string picture, string pictureAlt, string pictureTitle, 
-            string heading, string title, string text,string link, string btnText)
+        public Slide(string picture, string pictureAlt, string pictureTitle,
+            string heading, string title, string text, string link, string btnText)
         {
             Picture = picture;
             PictureAlt = pictureAlt;
@@ -29,12 +28,12 @@ namespace ShopManagement.Domain.SlideAgg
             Link = link;
         }
 
-        public void Edit (string picture, string pictureAlt, string pictureTitle,
+        public void Edit(string picture, string pictureAlt, string pictureTitle,
             string heading, string title, string text, string link, string btnText)
         {
-            if(!string.IsNullOrWhiteSpace(picture))
-                 Picture = picture;
-                 
+            if (!string.IsNullOrWhiteSpace(picture))
+                Picture = picture;
+
             PictureAlt = pictureAlt;
             PictureTitle = pictureTitle;
             Heading = heading;

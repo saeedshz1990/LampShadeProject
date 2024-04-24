@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using _0_FrameWork.Application;
+﻿using _0_FrameWork.Application;
 using _0_FrameWork.Infrasutructure;
 using _01_LampShadeQuery.Contracts;
 using DiscountManagement.Infrasutructure.EFCore;

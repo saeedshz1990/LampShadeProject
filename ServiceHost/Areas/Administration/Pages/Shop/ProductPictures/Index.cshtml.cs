@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -30,7 +29,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductPictures
 
         public void OnGet(ProductPictureSearchModel searchModel)
         {
-            Products= new SelectList(_productApplication.GetProducts(),"Id","Name");
+            Products = new SelectList(_productApplication.GetProducts(), "Id", "Name");
             ProductPictures = _productPictureApplication.Search(searchModel);
         }
 
@@ -41,7 +40,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductPictures
             {
                 Products = _productApplication.GetProducts()
             };
-            return Partial("./Create",command);
+            return Partial("./Create", command);
         }
 
         public JsonResult OnPostCreate(CreateProductPicture command)
@@ -65,7 +64,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductPictures
 
         public IActionResult OnGetRemove(long id)
         {
-           var result = _productPictureApplication.Remove(id);
+            var result = _productPictureApplication.Remove(id);
             if (result.IsSuccedded)
                 return RedirectToPage("./Index");
 

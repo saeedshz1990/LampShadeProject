@@ -1,10 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using _0_FrameWork.Application;
+using _0_FrameWork.Infrasutructure;
 using Microsoft.EntityFrameworkCore;
 using ShopManagement.Application.Contracts.Product;
 using ShopManagement.Domain.ProductAgg;
-using _0_FrameWork.Infrasutructure;
-using _0_FrameWork.Application;
 
 namespace ShopManagement.Infrasutructure.EFCore.Repository
 {

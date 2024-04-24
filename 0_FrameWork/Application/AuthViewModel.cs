@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace _0_FrameWork.Application
+﻿namespace _0_FrameWork.Application
 {
     public class AuthViewModel
     {

@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using _0_FrameWork.Domain;
+﻿using _0_FrameWork.Domain;
 
 namespace ShopManagement.Domain.OrderAgg
 {

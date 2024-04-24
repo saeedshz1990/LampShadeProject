@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using _0_FrameWork.Domain;
 using CommentManagement.Application.Contracts.Comment;
 

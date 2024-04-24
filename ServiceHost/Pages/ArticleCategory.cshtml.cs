@@ -1,7 +1,6 @@
 using _01_LampShadeQuery.Contracts.Article;
 using _01_LampShadeQuery.Contracts.ArticleCategory;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Collections.Generic;
 
 namespace ServiceHost.Pages
 {

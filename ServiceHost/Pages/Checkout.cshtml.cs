@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using _0_FrameWork.Application;
+﻿using _0_FrameWork.Application;
 using _0_FrameWork.Application.ZarinPal;
 using _01_LampShadeQuery.Contracts;
 using _01_LampShadeQuery.Contracts.Product;
@@ -9,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Nancy.Json;
 using ShopManagement.Application.Contracts.Order;
+using System.Globalization;
 
 namespace ServiceHost.Pages
 {

@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using _01_LampShadeQuery.Contracts.Inventory;
+﻿using _01_LampShadeQuery.Contracts.Inventory;
 using InventoryManagement.Application.Contracts.Inventory;
 using Microsoft.AspNetCore.Mvc;
 

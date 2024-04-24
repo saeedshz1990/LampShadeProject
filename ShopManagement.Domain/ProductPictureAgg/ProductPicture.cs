@@ -1,6 +1,5 @@
 ﻿using _0_FrameWork.Domain;
 using ShopManagement.Domain.ProductAgg;
-using System;
 
 namespace ShopManagement.Domain.ProductPictureAgg
 {
@@ -9,9 +8,9 @@ namespace ShopManagement.Domain.ProductPictureAgg
         public long ProductId { get; private set; }
         public string Picture { get; private set; } = string.Empty;
         public string PictureAlt { get; private set; } = string.Empty;
-        public string PictureTitle { get; private set; } = string.Empty;    
-        public bool IsRemoved { get; private set; } 
-        public Product Product { get;private set; }
+        public string PictureTitle { get; private set; } = string.Empty;
+        public bool IsRemoved { get; private set; }
+        public Product Product { get; private set; }
 
         public ProductPicture(long productId, string picture, string pictureAlt, string pictureTitle)
         {
@@ -25,8 +24,8 @@ namespace ShopManagement.Domain.ProductPictureAgg
         public void Edit(long productId, string picture, string pictureAlt, string pictureTitle)
         {
             ProductId = productId;
-            
-            if(!string.IsNullOrWhiteSpace(picture))
+
+            if (!string.IsNullOrWhiteSpace(picture))
                 Picture = picture;
 
             PictureAlt = pictureAlt;

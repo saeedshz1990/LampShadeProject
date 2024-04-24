@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using AccountManagement.Application.Contracts.Account;
 using AccountManagement.Application.Contracts.Role;
 using Microsoft.AspNetCore.Mvc;

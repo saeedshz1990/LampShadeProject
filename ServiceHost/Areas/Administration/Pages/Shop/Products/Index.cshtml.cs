@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using _0_FrameWork.Infrasutructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -35,7 +34,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Products
         [NeedsPermission(ShopPermissions.ListProducts)]
         public void OnGet(ProductSearchModel searchModel)
         {
-            ProductCategories= new SelectList(_productCategoryApplication.GetProductCategories(),"Id","Name");
+            ProductCategories = new SelectList(_productCategoryApplication.GetProductCategories(), "Id", "Name");
             Products = _productApplication.Search(searchModel);
         }
 
@@ -46,7 +45,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Products
             {
                 Categories = _productCategoryApplication.GetProductCategories()
             };
-            return Partial("./Create",command);
+            return Partial("./Create", command);
         }
 
         [NeedsPermission(ShopPermissions.CreateProduct)]
@@ -71,6 +70,6 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Products
         }
 
 
-       
+
     }
 }

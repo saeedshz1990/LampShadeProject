@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using _0_FrameWork.Application;
 using ShopManagement.Application.Contracts.Product;
-using _0_FrameWork.Application;
+using System.ComponentModel.DataAnnotations;
 
 namespace InventoryManagement.Application.Contracts.Inventory
 {

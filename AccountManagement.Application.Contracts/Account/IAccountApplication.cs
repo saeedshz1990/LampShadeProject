@@ -1,5 +1,4 @@
 ﻿using _0_FrameWork.Application;
-using System.Collections.Generic;
 
 namespace AccountManagement.Application.Contracts.Account
 {

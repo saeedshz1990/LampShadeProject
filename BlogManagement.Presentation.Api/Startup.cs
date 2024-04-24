@@ -1,8 +1,3 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using _0_FrameWork.Application;
 using BlogManagement.Infrasutructure.Configuration;
 using CommentManagement.Infrasutructure.Configuration;

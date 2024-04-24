@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using CommentManagement.Application.Contracts.Comment;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;

@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace ShopManagement.Application.Contracts.Order
+﻿namespace ShopManagement.Application.Contracts.Order
 {
     public class Cart
     {

@@ -3,8 +3,6 @@ using _0_FrameWork.Infrasutructure;
 using AccountManagement.Application.Contracts.Account;
 using AccountManagement.Domain.AccountAgg;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace AccountManagement.Infrastructure.EFCore.Repository
 {
@@ -12,7 +10,7 @@ namespace AccountManagement.Infrastructure.EFCore.Repository
     {
         private readonly AccountContext _context;
 
-        public AccountRepository(AccountContext context):base(context)
+        public AccountRepository(AccountContext context) : base(context)
         {
             _context = context;
         }
@@ -27,23 +25,23 @@ namespace AccountManagement.Infrastructure.EFCore.Repository
         {
             return _context.Account
                 .Select(x => new EditAccount
-            {
-                Id = id,
-                Fullname = x.Fullname,
-                Mobile = x.Mobile,  
-                RoleId = x.RoleId,      
-                Username=x.Username
-            }).FirstOrDefault(x=>x.Id==id);
+                {
+                    Id = id,
+                    Fullname = x.Fullname,
+                    Mobile = x.Mobile,
+                    RoleId = x.RoleId,
+                    Username = x.Username
+                }).FirstOrDefault(x => x.Id == id);
         }
 
         public List<AccountViewModel> GetAccounts()
         {
             return _context.Account
                 .Select(x => new AccountViewModel
-            {
-                Id = x.Id,
-                Fullname = x.Fullname
-            }).ToList();
+                {
+                    Id = x.Id,
+                    Fullname = x.Fullname
+                }).ToList();
         }
 
         public List<AccountViewModel> Search(AccountSearchModel searchModel)
@@ -51,16 +49,16 @@ namespace AccountManagement.Infrastructure.EFCore.Repository
             var query = _context.Account
                 .Include(x => x.Role)
                 .Select(x => new AccountViewModel
-            {
-                Id = x.Id,
-                Fullname = x.Fullname,
-                Mobile = x.Mobile,
-                ProfilePhoto = x.ProfilePhoto,
-                Role = x.Role.Name,
-                RoleId = x.RoleId,
-                Username = x.Username,
-                CreationDate = x.CreationDate.ToFarsi()
-            });
+                {
+                    Id = x.Id,
+                    Fullname = x.Fullname,
+                    Mobile = x.Mobile,
+                    ProfilePhoto = x.ProfilePhoto,
+                    Role = x.Role.Name,
+                    RoleId = x.RoleId,
+                    Username = x.Username,
+                    CreationDate = x.CreationDate.ToFarsi()
+                });
 
             if (!string.IsNullOrWhiteSpace(searchModel.Fullname))
                 query = query.Where(x => x.Fullname.Contains(searchModel.Fullname));

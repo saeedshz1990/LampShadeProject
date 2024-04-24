@@ -1,26 +1,19 @@
 using _0_FrameWork.Application;
+using _0_FrameWork.Application.Email;
+using _0_FrameWork.Application.Sms;
+using _0_FrameWork.Application.ZarinPal;
 using _0_FrameWork.Infrasutructure;
 using AccountManagement.Configuration;
 using BlogManagement.Infrasutructure.Configuration;
 using CommentManagement.Infrasutructure.Configuration;
 using DiscountManagement.Infrasutructure.Configuration;
 using InventoryManagement.Infrasutructure.Configuration;
+using InventoryManagement.Presentation.Api;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using ShopManagement.Infrasutructure.Configuration;
-using System.Collections.Generic;
+using ShopManagement.Presentation.Api;
 using System.Text.Encodings.Web;
 using System.Text.Unicode;
-using _0_FrameWork.Application.Email;
-using _0_FrameWork.Application.Sms;
-using _0_FrameWork.Application.ZarinPal;
-using ShopManagement.Presentation.Api;
-using InventoryManagement.Presentation.Api;
 
 namespace ServiceHost
 {
@@ -43,7 +36,7 @@ namespace ServiceHost
             InventoryBootstrapper.Configure(services, connectionString);
             BlogManagementBootstrapper.Configure(services, connectionString);
             CommentManagementBootstraper.Configure(services, connectionString);
-            AccountManagementBootstrapper.Configure(services,connectionString);
+            AccountManagementBootstrapper.Configure(services, connectionString);
 
             services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Arabic));
             services.AddSingleton<IPasswordHasher, PasswordHasher>();

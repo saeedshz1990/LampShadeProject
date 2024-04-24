@@ -12,12 +12,12 @@ namespace AccountManagement.Configuration
 {
     public class AccountManagementBootstrapper
     {
-        public static void Configure( IServiceCollection services, string connectionString)
+        public static void Configure(IServiceCollection services, string connectionString)
         {
-            services.AddTransient<IAccountApplication,AccountApplication>();
+            services.AddTransient<IAccountApplication, AccountApplication>();
             services.AddTransient<IAccountRepository, AccountRepository>();
 
-            services.AddTransient<IRoleApplication,RoleApplication>();
+            services.AddTransient<IRoleApplication, RoleApplication>();
             services.AddTransient<IRoleRepository, RoleRepository>();
 
             services.AddDbContext<AccountContext>(x => x.UseSqlServer(connectionString));

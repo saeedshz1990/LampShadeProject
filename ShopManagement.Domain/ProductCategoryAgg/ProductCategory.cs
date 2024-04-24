@@ -1,6 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using _0_FrameWork.Domain;
 using ShopManagement.Domain.ProductAgg;
-using _0_FrameWork.Domain;
 
 namespace ShopManagement.Domain.ProductCategoryAgg
 {
@@ -18,7 +17,7 @@ namespace ShopManagement.Domain.ProductCategoryAgg
 
         public ProductCategory()
         {
-           Products=new List<Product>(); 
+            Products = new List<Product>();
         }
 
         public ProductCategory(string name, string description,
@@ -41,9 +40,9 @@ namespace ShopManagement.Domain.ProductCategoryAgg
         {
             Name = name;
             Description = description;
-            if(!string.IsNullOrWhiteSpace(picture))
-                 Picture = picture;
-                 
+            if (!string.IsNullOrWhiteSpace(picture))
+                Picture = picture;
+
             PictureAlt = pictureAlt;
             PictureTitle = pictureTitle;
             Keywords = keywords;

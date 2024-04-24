@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using InventoryManagement.Application.Contracts.Inventory;
+﻿using InventoryManagement.Application.Contracts.Inventory;
 using ShopManagement.Domain.OrderAgg;
 using ShopManagement.Domain.Services;
 
